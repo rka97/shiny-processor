@@ -1,0 +1,67 @@
+/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg_file_tb
+-- Compiling architecture tb of reg_file_tb
+-- Loading package NUMERIC_STD
+-- Loading entity reg_file
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bi_reg
+-- Compiling architecture structural of bi_reg
+-- Loading entity reg
+-- Compiling entity bi_reg_bare
+-- Compiling architecture structural of bi_reg_bare
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity decoder_tb
+-- Compiling architecture behave of decoder_tb
+-- Loading package NUMERIC_STD
+-- Loading entity decoder
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg_tb
+-- Compiling architecture tb of reg_tb
+-- Loading entity reg
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bi_reg_tb
+-- Compiling architecture tb of bi_reg_tb
+-- Loading entity bi_reg
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder
+-- Compiling architecture behavioral of decoder
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg
+-- Compiling architecture behavorial of reg
+
+} {} {}}
