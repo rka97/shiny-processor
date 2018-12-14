@@ -9,7 +9,7 @@ z2
 cModel Technology
 d/mnt/01D35D8F61D34AA0/Projects/arch/arch labs
 Ebi_reg
-Z0 w1544631536
+Z0 w1544809891
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z3 d/mnt/01D35D8F61D34AA0/Projects/arch/project
@@ -17,13 +17,13 @@ Z4 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd
 Z5 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd
 l0
 L5
-Vcl]b[mIJGEJcCz<73L=T?0
-!s100 8BT6H:8W87M]JZ?j7i>Ri3
+Vd23Q]4:Ji_84<<W<6>F?k3
+!s100 cTjN6Yla=gKZ=DA0=H[bJ2
 Z6 OV;C;10.6d;65
 32
-Z7 !s110 1544649044
+Z7 !s110 1544810143
 !i10b 1
-Z8 !s108 1544649044.000000
+Z8 !s108 1544810143.000000
 Z9 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd|
 Z10 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd|
 !i113 1
@@ -33,11 +33,11 @@ Astructural
 Z13 DEx9 processor 3 reg 0 22 TfYE1LE2VkiB=?6gihUK20
 R1
 R2
-DEx4 work 6 bi_reg 0 22 cl]b[mIJGEJcCz<73L=T?0
+DEx4 work 6 bi_reg 0 22 d23Q]4:Ji_84<<W<6>F?k3
 l20
-L15
-V[[UJ4F<1g1]<[Q57L`i6H2
-!s100 QQ[BJ0>^Jc?5l@XCZKLcI3
+L16
+V6ldGo]9A1FYRmeHM=06AI2
+!s100 7iAQlUcZ_o@FF_Hd9VnW60
 R6
 32
 R7
@@ -56,9 +56,9 @@ R3
 R4
 R5
 l0
-L41
-VL>JQbBiJ>d825n75KY2Vg1
-!s100 TGJ<D0En>`=YB4af>TdhL0
+L39
+V29?Iz>Z@m4]90l9XiATNU1
+!s100 P08WHEFHfV61CiSk4CB<U2
 R6
 32
 R7
@@ -73,11 +73,11 @@ Astructural
 R13
 R1
 R2
-DEx4 work 11 bi_reg_bare 0 22 L>JQbBiJ>d825n75KY2Vg1
-l53
+DEx4 work 11 bi_reg_bare 0 22 29?Iz>Z@m4]90l9XiATNU1
+l51
 L49
-VK4S@H?WVm;O;Rg4md^nDa3
-!s100 G4JHWF4<jg3`OZj[?IDXn2
+VZ6Ti3:0bd4F>Al:JdafI:1
+!s100 1SB=c2PbRXaNOD6i@6VSb2
 R6
 32
 R7
@@ -89,7 +89,7 @@ R10
 R11
 R12
 Ebi_reg_tb
-Z14 w1544626949
+Z14 w1544810023
 R1
 R2
 R3
@@ -110,14 +110,14 @@ Z18 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd|
 R11
 R12
 Atb
-Z19 DEx9 processor 6 bi_reg 0 22 cl]b[mIJGEJcCz<73L=T?0
+Z19 DEx9 processor 6 bi_reg 0 22 d23Q]4:Ji_84<<W<6>F?k3
 R1
 R2
 DEx4 work 9 bi_reg_tb 0 22 K^EN5YCDz2iP>o:BXnHLa2
 l14
 L8
-VCiX0@L4[n;db3:8n]njFL1
-!s100 EXXlDQ3Mn<P0?d9l0[NzA0
+VBkdE_1ONF?Rlj?bJe^9^O1
+!s100 8^Fi8W4cP@PU]AZ02<CIn1
 R6
 32
 R7
@@ -232,7 +232,7 @@ R6
 R11
 R12
 Ereg
-Z31 w1544623579
+Z31 w1544807636
 R1
 R2
 R3
@@ -271,7 +271,7 @@ R35
 R11
 R12
 Ereg_file
-Z36 w1544649041
+Z36 w1544810129
 R21
 R1
 R2
@@ -279,9 +279,9 @@ R3
 Z37 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd
 Z38 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd
 l0
-L6
-VhCSGY:jHJeJjIQAGlX_R[0
-!s100 OaD[5O?cb@6R>eVUVSe^l2
+L7
+Vd3cX1:`W9UbFmfn5m@Yd93
+!s100 6^ZV20;Fe<g7ZEYATQ^k12
 R6
 32
 R7
@@ -294,15 +294,15 @@ R11
 R12
 Astructural
 R19
-DEx9 processor 11 bi_reg_bare 0 22 L>JQbBiJ>d825n75KY2Vg1
+DEx9 processor 11 bi_reg_bare 0 22 29?Iz>Z@m4]90l9XiATNU1
 R21
 R1
 R2
-DEx4 work 8 reg_file 0 22 hCSGY:jHJeJjIQAGlX_R[0
-l21
-L19
-Vo@FMM>I8SPGjei68SaVGK0
-!s100 VoLMO9UD20`J]Z1c3DbYi2
+DEx4 work 8 reg_file 0 22 d3cX1:`W9UbFmfn5m@Yd93
+l23
+L21
+VLf8_TVYgYi4:V8N_@U11c3
+!s100 bLhzXZm76N`:lmhW]KoZ@0
 R6
 32
 R7
@@ -314,7 +314,7 @@ R40
 R11
 R12
 Ereg_file_tb
-Z41 w1544648513
+Z41 w1544809673
 R1
 R2
 R3
@@ -326,31 +326,31 @@ Vhi`]3b`C@e0;_NjHhXUk?3
 !s100 61;@ZCj;5Q<VR=5nSV2?j2
 R6
 32
-R7
+Z44 !s110 1544810144
 !i10b 1
 R8
-Z44 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
-Z45 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
+Z45 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
+Z46 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
 !i113 1
 R11
 R12
 Atb
 R21
-Z46 DEx9 processor 8 reg_file 0 22 hCSGY:jHJeJjIQAGlX_R[0
+DEx9 processor 8 reg_file 0 22 d3cX1:`W9UbFmfn5m@Yd93
 R1
 R2
 Z47 DEx4 work 11 reg_file_tb 0 22 hi`]3b`C@e0;_NjHhXUk?3
-l14
+l15
 L8
-Z48 V=8;=Nc1k@h0nW[`MeVBMN3
-Z49 !s100 E5BDJo4Fl:X1H4dcEfz1a2
+Z48 VOg0VSiElFF7kQ5ZmhObCi1
+Z49 !s100 =Eg97JhH]a2R[=zhFBB110
 R6
 32
-R7
+R44
 !i10b 1
 R8
-R44
 R45
+R46
 !i113 1
 R11
 R12
