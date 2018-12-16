@@ -5,9 +5,9 @@ library processor;
 
 entity reg_file is
     generic (
-       n: natural :=32;
-	num_reg: natural :=3;
-	address : natural := 10
+        N : natural :=32;
+        num_reg : natural :=3;
+        address : natural := 10
     );
     port (
         clk, mem_clk, src_en, dst_en, mdr_force_in, write_en : in std_logic;
@@ -69,9 +69,9 @@ architecture structural of reg_file is
 	ram: ENTITY processor.ram
 	GENERIC map( n => N)
 	port map(
-		clk =>mem_clk,
-		we  =>write_en,
+		clk => mem_clk,
+		we  => write_en,
 		address => mar_data_out,
 		datain  => mdr_data_out,
-		dataout =>mdr_data_in);
+		dataout => mdr_data_in);
 end structural;

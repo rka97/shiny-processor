@@ -1,29 +1,27 @@
-LIBRARY IEEE;
-USE IEEE.std_logic_1164.all;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
 entity counter is
-generic(n:integer:=4);--max count 6, need 3 bits
+generic(n : integer := 4);--max count 6, need 3 bits
 port (
-	clk   : in std_logic;
-	rst : in std_logic;
-	count : out std_logic_vector(n-1 downto 0));
+	clk, rst, enable : in std_logic;
+	count	: out std_logic_vector(n-1 downto 0));
 end counter;
 
 architecture behavioral of counter is
-signal temp : std_logic_vector(n-1 downto 0);
 begin
-
-	process(clk, rst)
+	process(clk, rst, enable)
+	variable temp : std_logic_vector(n-1 downto 0) := (others => '0');
 	begin
-		if (rst = '1') then
-			--if reset'event then
-				temp <= (others => '0');
-			--end if;
-		elsif (rising_edge(clk)) then
-			temp <= temp + 1;
-		end if;
+		if (enable = '1') then
+			if (rst = '1') then
+				temp := (others => '0');
+			elsif (rising_edge(clk)) then
+				temp := temp + 1;
+			end if;
+		end if;	
+		count <= temp;
 	end process;
-	count <= temp;
 end architecture;
