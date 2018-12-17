@@ -53,6 +53,6 @@ architecture behavioral of arithmetic_unit is
             end if;
         end process;
 
-        F <= (others => '0') when (Sel = "11" and Cin = '1') else         temp_Sum;
+        F <= (others => '0') when (Sel = "11" and Cin = '1') else  temp_Sum;
         Cout <= '0' when (Sel = "11" and Cin = '1') else temp_C;
 end behavioral;

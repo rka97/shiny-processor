@@ -21,6 +21,8 @@ constant MDRout       : std_logic_vector(31 downto 0) := "1010" & (27 downto 0 =
 constant FLAGout      : std_logic_vector(31 downto 0) := "1011" & (27 downto 0 => '0');
 constant TMP1out      : std_logic_vector(31 downto 0) := "1100" & (27 downto 0 => '0');
 constant TMP2out      : std_logic_vector(31 downto 0) := "1101" & (27 downto 0 => '0');
+constant BrIRout      : std_logic_vector(31 downto 0) := "1110" & (27 downto 0 => '0');
+constant NoSrc        : std_logic_vector(31 downto 0) := "1111" & (27 downto 0 => '0');
 
 constant R0in         : std_logic_vector(N-1 downto 0) := (13 => '1', others =>'0'); -- 0
 constant R1in         : std_logic_vector(N-1 downto 0) := (14 => '1', others =>'0'); -- 1
