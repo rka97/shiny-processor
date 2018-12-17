@@ -6,8 +6,8 @@ library processor;
 entity cw_decoder is
     port (
         control_word    : in  std_logic_vector(31 downto 0);
-        src_sel         : out std_logic_vector(14 downto 0);
-        dst_sel         : out std_logic_vector(14 downto 0);
+        src_sel         : out std_logic_vector(13 downto 0);
+        dst_sel         : out std_logic_vector(13 downto 0);
         alsu_sel        : out std_logic_vector(3 downto 0);
         br_offset_only  : out std_logic;
         mar_force_in    : out std_logic;
@@ -31,10 +31,12 @@ begin
             A => control_word(31 downto 28),
             F => decoded_src_sel
         );
-    src_sel <= decoded_src_sel(13 downto 0);
-    br_offset_only <= control_word(31) and control_word(30) and control_word(29) and control_word(28);
+    src_sel <= decoded_src_sel(14 downto 1);
+    src_en <= or control_word(31 downto 28);
+    br_offset_only <= and control_word(31 downto 28);
     mar_force_in <= control_word(27);
     dst_sel <= control_word(26 downto 13);
+    dst_en <= or control_word(26 downto 13);
     alsu_sel <= control_word(12 downto 9);
     mem_rd <= control_word(6);
     mem_wr <= control_word(5);

@@ -70,7 +70,7 @@ constant F_HI         : std_logic_vector(31 downto 0) := (31 downto 13 => '0') &
 constant RD           : std_logic_vector(N-1 downto 0) := (6 => '1', others =>'0');
 constant WT           : std_logic_vector(N-1 downto 0) := (5 => '1', others =>'0');
 constant HLT          : std_logic_vector(N-1 downto 0) := (4 => '1', others =>'0');
-constant NOP          : std_logic_vector(N-1 downto 0) := (3 => '1', others =>'0');
+constant NoOP         : std_logic_vector(N-1 downto 0) := (3 => '1', others =>'0');
 constant ForceFlag    : std_logic_vector(N-1 downto 0) := (2 => '1', others =>'0');
 
 end package;
