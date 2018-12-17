@@ -1,16 +1,4 @@
-/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity reg_file
--- Compiling architecture structural of reg_file
--- Loading entity bi_reg_bare
--- Loading entity bi_reg
--- Loading entity ram
-
-} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
+/mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -19,21 +7,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Compiling entity decoder
 -- Compiling architecture behavioral of decoder
 
-} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd {0 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity reg_file_tb
--- Compiling architecture tb of reg_file_tb
--- Loading package NUMERIC_STD
--- Loading entity reg_file
-** Error: /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd(30): (vcom-1484) Unknown formal identifier "mdr_data_in".
-** Error: /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd(31): (vcom-1484) Unknown formal identifier "mdr_data_out".
-** Error: /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd(32): (vcom-1484) Unknown formal identifier "mar_data_out".
-** Error: /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd(77): VHDL Compiler exiting
-
-} {10.0 14.0} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -64,6 +38,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Compiling entity counter
 -- Compiling architecture behavioral of counter
 
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity counter_tb
+-- Compiling architecture behave of counter_tb
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity counter
+
 } {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
 -- Loading package STANDARD
@@ -80,15 +65,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Loading package std_logic_1164
 -- Compiling entity reg
 -- Compiling architecture behavorial of reg
-
-} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd {1 {vcom -work work -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity ram
--- Compiling architecture mixed_ram of ram
 
 } {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
