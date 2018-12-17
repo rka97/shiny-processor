@@ -48,8 +48,9 @@ constant F_Am1        : std_logic_vector(31 downto 0) :=  (31 downto 13 => '0') 
 constant F_Ap1        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00001" & (7 downto 0 => '0');
 constant F_ApBp1      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00011" & (7 downto 0 => '0');
 constant F_AmB        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00101" & (7 downto 0 => '0');
+constant F_Zero       : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00110" & (7 downto 0 => '0');
 
-constant F_AandB      : std_logic_vector(31 downto 0) :=  (31 downto 13 => '0') & "0100" & (8 downto 0 => '0');
+constant F_AandB      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0100" & (8 downto 0 => '0');
 constant F_AorB       : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0101" & (8 downto 0 => '0');
 constant F_AxorB      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0110" & (8 downto 0 => '0');
 constant F_AnotB      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0111" & (8 downto 0 => '0');
@@ -61,11 +62,12 @@ constant F_ASR        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') &
 constant F_LSL        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "1100" & (8 downto 0 => '0');
 constant F_ROL        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "1101" & (8 downto 0 => '0');
 constant F_RLC        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "1110" & (8 downto 0 => '0');
-constant F_0          : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "1111" & (8 downto 0 => '0');
+constant F_HI         : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "1111" & (8 downto 0 => '0');
 
 constant RD           : std_logic_vector(N-1 downto 0) := (6 => '1', others =>'0');
 constant WT           : std_logic_vector(N-1 downto 0) := (5 => '1', others =>'0');
 constant HLT          : std_logic_vector(N-1 downto 0) := (4 => '1', others =>'0');
 constant NOP          : std_logic_vector(N-1 downto 0) := (3 => '1', others =>'0');
+constant ForceFlag    : std_logic_vector(N-1 downto 0) := (2 => '1', others =>'0');
 
 end package;

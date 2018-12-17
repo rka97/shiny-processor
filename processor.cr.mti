@@ -1,4 +1,14 @@
-/mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
+/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg_file
+-- Compiling architecture structural of reg_file
+-- Loading entity bi_reg_bare
+-- Loading entity bi_reg
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -6,6 +16,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Loading package NUMERIC_STD
 -- Compiling entity decoder
 -- Compiling architecture behavioral of decoder
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg_file_tb
+-- Compiling architecture tb of reg_file_tb
+-- Loading entity reg_file
 
 } {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
@@ -66,6 +85,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Compiling entity reg
 -- Compiling architecture behavorial of reg
 
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd {2 {vcom -work work -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture mixed_ram of ram
+** Warning: /mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd(23): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+
 } {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
 -- Loading package STANDARD
@@ -74,6 +103,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Compiling entity reg_tb
 -- Compiling architecture tb of reg_tb
 -- Loading entity reg
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ram_tb
+-- Compiling architecture tb of ram_tb
+-- Loading package NUMERIC_STD
+-- Loading entity ram
 
 } {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018

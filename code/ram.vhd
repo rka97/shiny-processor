@@ -1,31 +1,36 @@
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
-USE IEEE.numeric_std.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 library processor;
-ENTITY ram IS
-GENERIC ( n : integer := 32);
-	PORT(
-		clk : IN std_logic;
-		we  : IN std_logic;
-		address : IN  std_logic_vector(n-1 DOWNTO 0);
-		datain  : IN  std_logic_vector(n-1 DOWNTO 0);
-		dataout : OUT std_logic_vector(n-1 DOWNTO 0));
-END ENTITY ram;
 
-ARCHITECTURE mixed_ram OF ram IS
+entity ram is
+	generic ( 
+		N : integer := 16;
+		addr_size : integer := 5
+	); 
+	port (
+		clk, read_in, write_out : in std_logic;
+		address : in  std_logic_vector(addr_size-1 downto 0);
+		data_in  : in  std_logic_vector(N-1 downto 0);
+		data_out : out std_logic_vector(N-1 downto 0));
+end entity ram;
 
-	TYPE ram_type IS ARRAY(0 TO 511) OF std_logic_vector(n-1 DOWNTO 0);
-	SIGNAL ram : ram_type ;
-	
-	BEGIN
-		PROCESS(clk) IS
-			BEGIN
-				IF rising_edge(clk) THEN  
-					IF we = '1' THEN
-						ram(to_integer(unsigned(address))) <= datain;
-					END IF;
-				END IF;
-		END PROCESS;
-		dataout <= ram(to_integer(unsigned(address)));
-END mixed_ram;
+architecture mixed_ram of ram is
+	type ram_type is array (0 to (2**addr_size)-1) of std_logic_vector(N-1 downto 0);
+    signal ram : ram_type := (
+        1 => X"0101",
+        8 => X"0108",
+        others => X"0000"
+    );
+	begin
+		process(clk) is
+			begin
+				if rising_edge(clk) then  
+					if read_in = '1' then
+						ram(to_integer(unsigned(address))) <= data_in;
+					end if;
+				end if;
+		end process;
+		data_out <= ram(to_integer(unsigned(address))) when (write_out = '1') else (others => 'Z');
+end mixed_ram;
 
