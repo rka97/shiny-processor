@@ -13,8 +13,6 @@ architecture tb of reg_file_tb is
     constant period : time := 1 ns;
 
     begin
-        src_decoder 
-
         reg_file_inst : entity processor.reg_file
             generic map ( 
                 N => 16,

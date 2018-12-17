@@ -1,28 +1,29 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+
 package p_constants is
 
 constant N : integer := 32;
 
-constant R0out        : std_logic_vector(31 downto 0) := "0000" & (27 downto 0 => '0');
-constant R1out        : std_logic_vector(31 downto 0) := "0001" & (27 downto 0 => '0');
-constant R2out        : std_logic_vector(31 downto 0) := "0010" & (27 downto 0 => '0');
-constant R3out        : std_logic_vector(31 downto 0) := "0011" & (27 downto 0 => '0');
-constant R4out        : std_logic_vector(31 downto 0) := "0100" & (27 downto 0 => '0');
-constant R5out        : std_logic_vector(31 downto 0) := "0101" & (27 downto 0 => '0');
-constant R6out        : std_logic_vector(31 downto 0) := "0110" & (27 downto 0 => '0');
-constant SPout        : std_logic_vector(31 downto 0) := "0110" & (27 downto 0 => '0');
-constant R7out        : std_logic_vector(31 downto 0) := "0111" & (27 downto 0 => '0');
-constant PCout        : std_logic_vector(31 downto 0) := "0111" & (27 downto 0 => '0');
-constant IRout        : std_logic_vector(31 downto 0) := "1000" & (27 downto 0 => '0');
-constant MARout       : std_logic_vector(31 downto 0) := "1001" & (27 downto 0 => '0');
-constant MDRout       : std_logic_vector(31 downto 0) := "1010" & (27 downto 0 => '0');
-constant FLAGout      : std_logic_vector(31 downto 0) := "1011" & (27 downto 0 => '0');
-constant TMP1out      : std_logic_vector(31 downto 0) := "1100" & (27 downto 0 => '0');
-constant TMP2out      : std_logic_vector(31 downto 0) := "1101" & (27 downto 0 => '0');
-constant BrIRout      : std_logic_vector(31 downto 0) := "1110" & (27 downto 0 => '0');
-constant NoSrc        : std_logic_vector(31 downto 0) := "1111" & (27 downto 0 => '0');
+constant NoSrc        : std_logic_vector(31 downto 0) := "0000" & (27 downto 0 => '0');
+constant R0out        : std_logic_vector(31 downto 0) := "0001" & (27 downto 0 => '0');
+constant R1out        : std_logic_vector(31 downto 0) := "0010" & (27 downto 0 => '0');
+constant R2out        : std_logic_vector(31 downto 0) := "0011" & (27 downto 0 => '0');
+constant R3out        : std_logic_vector(31 downto 0) := "0100" & (27 downto 0 => '0');
+constant R4out        : std_logic_vector(31 downto 0) := "0101" & (27 downto 0 => '0');
+constant R5out        : std_logic_vector(31 downto 0) := "0110" & (27 downto 0 => '0');
+constant R6out        : std_logic_vector(31 downto 0) := "0111" & (27 downto 0 => '0');
+constant SPout        : std_logic_vector(31 downto 0) := "0111" & (27 downto 0 => '0');
+constant R7out        : std_logic_vector(31 downto 0) := "1000" & (27 downto 0 => '0');
+constant PCout        : std_logic_vector(31 downto 0) := "1000" & (27 downto 0 => '0');
+constant IRout        : std_logic_vector(31 downto 0) := "1001" & (27 downto 0 => '0');
+constant MARout       : std_logic_vector(31 downto 0) := "1010" & (27 downto 0 => '0');
+constant MDRout       : std_logic_vector(31 downto 0) := "1011" & (27 downto 0 => '0');
+constant FLAGout      : std_logic_vector(31 downto 0) := "1100" & (27 downto 0 => '0');
+constant TMP1out      : std_logic_vector(31 downto 0) := "1101" & (27 downto 0 => '0');
+constant TMP2out      : std_logic_vector(31 downto 0) := "1110" & (27 downto 0 => '0');
+constant BrIRout      : std_logic_vector(31 downto 0) := "1111" & (27 downto 0 => '0');
 
 constant R0in         : std_logic_vector(N-1 downto 0) := (13 => '1', others =>'0'); -- 0
 constant R1in         : std_logic_vector(N-1 downto 0) := (14 => '1', others =>'0'); -- 1
