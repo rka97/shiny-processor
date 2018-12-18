@@ -38,7 +38,7 @@ architecture behavioral of shift_unit is
                 Cout <= A(N-1);
                 F <= A(N-2 downto 0) & Cin;
             else
-                Cout <= '0';
+                Cout <= 'Z';
                 F <= (others => 'Z');
             end if;
         end process;

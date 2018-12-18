@@ -16,10 +16,12 @@ begin
 	variable temp : std_logic_vector(max_nbits-1 downto 0) := (others => '0');
 	begin
 		if (enable = '1') then
-			if (rst = '1') then
-				temp := (others => '0');
-			elsif (rising_edge(clk)) then
-				temp := temp + 1;
+			if falling_edge(clk) then
+				if (rst = '1') then
+					temp := (others => '0');
+				else
+					temp := temp + 1;
+				end if;
 			end if;
 		end if;	
 		count <= temp;

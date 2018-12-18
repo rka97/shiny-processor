@@ -82,7 +82,7 @@ architecture structural of alsu is
             Cout => su_Cout
         );
 
-        Zero <= '1' when (temp_F = (N-1 downto 0 => '0')) else '0';
+        Zero <= '1' when (temp_F = (N-1 downto 0 => '0')) else 'Z' when (Sel = "1111") else '0';
         Negative <= temp_F(N-1);
         Parity <= not (xor temp_F) when not (Sel = "1111") else 'Z';
 

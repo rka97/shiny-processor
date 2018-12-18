@@ -4,7 +4,9 @@ use ieee.numeric_std.all;
 
 package p_constants is
 
-constant N : integer := 32;
+constant N              : integer := 32;
+constant state_size     : integer := 2;
+constant max_count_bits : integer := 3;
 
 constant NoSrc        : std_logic_vector(31 downto 0) := "0000" & (27 downto 0 => '0');
 constant R0out        : std_logic_vector(31 downto 0) := "0001" & (27 downto 0 => '0');
@@ -36,7 +38,7 @@ constant SPin         : std_logic_vector(N-1 downto 0) := (19 => '1', others =>'
 constant R7in         : std_logic_vector(N-1 downto 0) := (20 => '1', others =>'0'); -- 7
 constant PCin         : std_logic_vector(N-1 downto 0) := (20 => '1', others =>'0'); -- 7
 constant IRin         : std_logic_vector(N-1 downto 0) := (21 => '1', others =>'0'); -- 8
-constant MARin2       : std_logic_vector(N-1 downto 0) := (22 => '1', others =>'0'); -- 9
+constant MARin        : std_logic_vector(N-1 downto 0) := (22 => '1', others =>'0'); -- 9
 constant MDRin        : std_logic_vector(N-1 downto 0) := (23 => '1', others =>'0'); -- 10
 constant FLAGin       : std_logic_vector(N-1 downto 0) := (24 => '1', others =>'0'); -- 11
 constant TMP1in       : std_logic_vector(N-1 downto 0) := (25 => '1', others =>'0'); -- 12

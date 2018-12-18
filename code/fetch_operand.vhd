@@ -62,8 +62,7 @@ architecture behavioral of fetch_operand is
                     elsif  fetch_cycle = "100" then --indirect register
                         control_word <= (Riout or MARin1 or Rd);
                     elsif  fetch_cycle = "101" then 
-                        mem_out := true;   
-                        
+                        mem_out := true;
                     end if;
                 elsif address_mode ="01" then -- auto_increment
                     if  fetch_cycle = "000" or fetch_cycle = "100" then

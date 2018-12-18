@@ -93,7 +93,7 @@ begin
             -- write "AA00" to R0, R1, R2, TMP1, MAR
             -- write to memory too
             data_1 <= x"AA00";
-            control_word <= R0in or R1in or R2in or TMP1in or MARin2 or WT or F_HI;
+            control_word <= R0in or R1in or R2in or TMP1in or MARin or WT or F_HI;
             wait for period;
             -- query data in R1
             -- read from memory to MDR

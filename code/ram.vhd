@@ -18,8 +18,9 @@ end entity ram;
 architecture mixed_ram of ram is
 	type ram_type is array (0 to (2**addr_size)-1) of std_logic_vector(N-1 downto 0);
     signal ram : ram_type := (
-        1 => X"0101",
-		2 => X"0102",
+		0 => X"1000",
+        1 => X"1001",
+		2 => X"1001",
 		others => X"0000"
     );
 	begin
