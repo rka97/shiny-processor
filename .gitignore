@@ -1,4 +1,8 @@
 # intermediate build files
+*.qdp
+*.qpg
+*.qtl
+*.bak
 *.bgn
 *.bit
 *.bld

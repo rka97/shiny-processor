@@ -12,19 +12,20 @@ architecture behave of manual_ctrl_tb is
     signal control_word : std_logic_vector(31 downto 0) := (others => 'Z');
     signal src_sel, dst_sel : std_logic_vector(13 downto 0) := (others => 'Z');
     signal alsu_sel : std_logic_vector(3 downto 0) := (others => 'Z');
-    signal clk, br_offset_only, mar_in1, mem_rd, mem_wr, halt, nop, force_flag, src_en, dst_en, c_in : std_logic := 'Z';
+    signal clk, br_offset_only, mar_in1, mem_rd, mem_wr, halt, nop, cin_force, force_flag, src_en, dst_en, c_in : std_logic := 'Z';
     signal data_1, flags_data_current, flags_data_next : std_logic_vector(15 downto 0) := (others => '0');
     signal data_2, mar_data_out, mdr_data_in, mdr_data_out, tmp1_data_out, tmp2_data_out, IR_data_out : std_logic_vector(15 downto 0) := (others => 'Z');
     constant period : time := 1 ns;
     
 begin
-    c_in <= flags_data_current(0) when not (flags_data_current(0) = 'Z') else '0';
+    c_in <= '1' when (cin_force = '1') else flags_data_current(0) when not (flags_data_current(0) = 'Z') else '0';
     cw_decoder_inst : entity processor.cw_decoder
         port map (
             control_word => control_word,
             src_sel => src_sel,
             dst_sel => dst_sel,
             alsu_sel => alsu_sel,
+            cin_force => cin_force,
             br_offset_only => br_offset_only,
             mar_force_in => mar_in1,
             mem_rd => mem_rd,
@@ -78,7 +79,11 @@ begin
             B => tmp1_data_out,
             Cin => c_in,
             F => data_1,
-            Cout => flags_data_next(0)
+            Cout => flags_data_next(0),
+            Zero => flags_data_next(1),
+            Negative => flags_data_next(2),
+            Parity => flags_data_next(3),
+            Overflow => flags_data_next(4)
         );
     process is
         begin

@@ -1,1 +1,621 @@
 # Loading project processor
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd failed with 3 errors.
+# Compile of counter.vhd failed with 5 errors.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 2 failed with 8 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd failed with 3 errors.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 1 failed with 3 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd failed with 1 errors.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 1 failed with 1 error.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd failed with 7 errors.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 1 failed with 7 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd failed with 9 errors.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 1 failed with 9 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+vsim work.alsu_tb
+# vsim work.alsu_tb 
+# Start time: 15:35:13 on Dec 18,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alsu_tb(tb)
+# Loading work.alsu(structural)
+# Loading work.arithmetic_unit(behavioral)
+# Loading work.adder(structural)
+# Loading work.full_adder(dataflow)
+# Loading work.logic_unit(dataflow)
+# Loading work.shift_unit(behavioral)
+# ** Fatal: (vsim-3734) Index value 31 is out of range 15 downto 0.
+#    Time: 0 ps  Iteration: 0  Process: /alsu_tb/alsu_inst/au_inst/line__59 File: /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/arithmetic_unit.vhd
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 15:35:14 on Dec 18,2018, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of arithmetic_unit.vhd was successful.
+restart -f
+# No Design Loaded!
+vsim processor.alsu_tb
+# vsim processor.alsu_tb 
+# Start time: 15:36:38 on Dec 18,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading processor.alsu_tb(tb)
+# Loading processor.alsu(structural)
+# Loading processor.arithmetic_unit(behavioral)
+# Loading processor.adder(structural)
+# Loading processor.full_adder(dataflow)
+# Loading processor.logic_unit(dataflow)
+# Loading processor.shift_unit(behavioral)
+restart -f
+add wave -position insertpoint  \
+sim:/alsu_tb/Sel \
+sim:/alsu_tb/A \
+sim:/alsu_tb/B \
+sim:/alsu_tb/Cin \
+sim:/alsu_tb/F \
+sim:/alsu_tb/Cout \
+sim:/alsu_tb/Zero \
+sim:/alsu_tb/Negative \
+sim:/alsu_tb/Parity \
+sim:/alsu_tb/Overflow
+restart -f
+run
+restart -f
+# Compile of alsu_tb.vhd was successful.
+restart -f
+# Loading processor.alsu_tb(tb)
+run
+add wave -position insertpoint  \
+sim:/alsu_tb/alsu_inst/au_inst/temp_B \
+sim:/alsu_tb/alsu_inst/au_inst/temp_C \
+sim:/alsu_tb/alsu_inst/au_inst/temp_Sum \
+sim:/alsu_tb/alsu_inst/au_inst/temp_F
+restart -f
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd failed with 8 errors.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 1 failed with 8 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd failed with 6 errors.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 1 failed with 6 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd failed with 2 errors.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 1 failed with 2 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading processor.alsu_tb(tb)
+# Loading processor.alsu(structural)
+# Loading processor.arithmetic_unit(behavioral)
+# ** Error: (vsim-3732) /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/alsu.vhd(64): No default binding for component instance 'au_inst'.
+#    The following component ports are not on the entity:
+#           Parity
+#           Negative
+#           Zero
+#    Time: 0 ps  Iteration: 0  Instance: /alsu_tb/alsu_inst/au_inst File: /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/arithmetic_unit.vhd
+# Loading processor.adder(structural)
+# Loading processor.full_adder(dataflow)
+# Loading processor.logic_unit(dataflow)
+# Loading processor.shift_unit(behavioral)
+run
+# No Design Loaded!
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim work.alsu_tb
+# vsim work.alsu_tb 
+# Start time: 15:36:38 on Dec 18,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alsu_tb(tb)
+# Loading work.alsu(structural)
+# Loading work.arithmetic_unit(behavioral)
+# Loading work.adder(structural)
+# Loading work.full_adder(dataflow)
+# Loading work.logic_unit(dataflow)
+# Loading work.shift_unit(behavioral)
+restart -f
+run
+add wave -position insertpoint  \
+sim:/alsu_tb/alsu_inst/temp_F
+restart -f
+run
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.alsu_tb(tb)
+# Loading work.alsu(structural)
+# Loading work.arithmetic_unit(behavioral)
+# Loading work.adder(structural)
+# Loading work.full_adder(dataflow)
+# Loading work.logic_unit(dataflow)
+# Loading work.shift_unit(behavioral)
+run
+# Compile of reg.vhd was successful.
+# Compile of reg_tb.vhd was successful with warnings.
+# Compile of decoder.vhd was successful.
+# Compile of decoder_tb.vhd was successful.
+# Compile of bi_reg.vhd was successful.
+# Compile of bi_reg_tb.vhd was successful with warnings.
+# Compile of reg_file.vhd was successful.
+# Compile of reg_file_tb.vhd was successful.
+# Compile of ram_testbench.vhd was successful.
+# Compile of counter_tb.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of ram.vhd was successful with warnings.
+# Compile of ram_tb.vhd was successful with warnings.
+# Compile of adder.vhd was successful.
+# Compile of alsu.vhd was successful.
+# Compile of arithmetic_unit.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of shift_unit.vhd was successful.
+# Compile of adder_tb.vhd was successful.
+# Compile of alsu_tb.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of cw_decoder.vhd was successful.
+# Compile of cw_decoder_tb.vhd was successful.
+# Compile of constants.vhd was successful with warnings.
+# Compile of manual_ctrl_tb.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.alsu_tb(tb)
+# Loading work.alsu(structural)
+# Loading work.arithmetic_unit(behavioral)
+# Loading work.adder(structural)
+# Loading work.full_adder(dataflow)
+# Loading work.logic_unit(dataflow)
+# Loading work.shift_unit(behavioral)
+run
+vsim work.manual_ctrl_tb
+# End time: 16:01:00 on Dec 18,2018, Elapsed time: 0:24:22
+# Errors: 1, Warnings: 1
+# vsim work.manual_ctrl_tb 
+# Start time: 16:01:00 on Dec 18,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.p_constants
+# Loading work.manual_ctrl_tb(behave)
+# Loading work.cw_decoder(mixed)
+# Loading work.decoder(behavioral)
+# Loading work.reg_file(structural)
+# Loading work.bi_reg_bare(structural)
+# Loading work.reg(behavorial)
+# Loading work.bi_reg(structural)
+# Loading work.ram(mixed_ram)
+# Loading work.alsu(structural)
+# Loading work.arithmetic_unit(behavioral)
+# Loading work.adder(structural)
+# Loading work.full_adder(dataflow)
+# Loading work.logic_unit(dataflow)
+# Loading work.shift_unit(behavioral)
+# A time value could not be extracted from the current line
+restart -f
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /manual_ctrl_tb/cw_decoder_inst/decoder_inst_tb
+add wave -position insertpoint  \
+sim:/manual_ctrl_tb/control_word \
+sim:/manual_ctrl_tb/src_sel \
+sim:/manual_ctrl_tb/dst_sel \
+sim:/manual_ctrl_tb/alsu_sel \
+sim:/manual_ctrl_tb/clk \
+sim:/manual_ctrl_tb/br_offset_only \
+sim:/manual_ctrl_tb/mar_in1 \
+sim:/manual_ctrl_tb/mem_rd \
+sim:/manual_ctrl_tb/mem_wr \
+sim:/manual_ctrl_tb/halt \
+sim:/manual_ctrl_tb/nop \
+sim:/manual_ctrl_tb/force_flag \
+sim:/manual_ctrl_tb/src_en \
+sim:/manual_ctrl_tb/dst_en \
+sim:/manual_ctrl_tb/c_in \
+sim:/manual_ctrl_tb/data_1 \
+sim:/manual_ctrl_tb/flags_data_current \
+sim:/manual_ctrl_tb/flags_data_next \
+sim:/manual_ctrl_tb/data_2 \
+sim:/manual_ctrl_tb/mar_data_out \
+sim:/manual_ctrl_tb/mdr_data_in \
+sim:/manual_ctrl_tb/mdr_data_out \
+sim:/manual_ctrl_tb/tmp1_data_out \
+sim:/manual_ctrl_tb/tmp2_data_out \
+sim:/manual_ctrl_tb/IR_data_out \
+sim:/manual_ctrl_tb/period
+restart -f
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /manual_ctrl_tb/cw_decoder_inst/decoder_inst_tb

@@ -10,7 +10,7 @@ architecture behave of cw_decoder_tb is
     signal control_word : std_logic_vector(31 downto 0) := (others => 'Z');
     signal src_sel, dst_sel : std_logic_vector(13 downto 0) := (others => 'Z');
     signal alsu_sel : std_logic_vector(3 downto 0) := (others => 'Z');
-    signal br_offset_only, mar_force_in, mem_rd, mem_wr, halt, nop, force_flag, src_en, dst_en : std_logic := 'Z';
+    signal br_offset_only, mar_force_in, mem_rd, mem_wr, halt, nop, cin_force, force_flag, src_en, dst_en : std_logic := 'Z';
     constant period : time := 1 ns;
 begin
     cw_decoder_inst : entity processor.cw_decoder
@@ -19,6 +19,7 @@ begin
             src_sel => src_sel,
             dst_sel => dst_sel,
             alsu_sel => alsu_sel,
+            cin_force => cin_force,
             br_offset_only => br_offset_only,
             mar_force_in => mar_force_in,
             mem_rd => mem_rd,

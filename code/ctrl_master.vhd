@@ -9,7 +9,7 @@ entity ctrl_master is
     port (
         clk,enable	: in std_logic; --enable can be ='1' we klas
         state		: out std_logic_vector(state_size-1 downto 0);
-        IR_data		: in std_logic_vector(31 downto 0);
+        IR_data		: in std_logic_vector(15 downto 0);
         control_word: out std_logic_vector(31 downto 0) 
     );
 end ctrl_master;
