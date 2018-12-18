@@ -1,4 +1,18 @@
-/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd
+/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd {1 {vcom -work processor -2008 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package p_constants
+-- Compiling entity manual_ctrl_tb
+-- Compiling architecture behave of manual_ctrl_tb
+-- Loading entity cw_decoder
+-- Loading entity reg_file
+-- Loading entity ram
+-- Loading entity alsu
+
+} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -89,16 +103,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Compiling entity bi_reg_bare
 -- Compiling architecture structural of bi_reg_bare
 
-} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity counter
--- Compiling architecture behavioral of counter
-
 } {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/alsu.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/alsu.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
 -- Loading package STANDARD
@@ -117,17 +121,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Compiling entity cw_decoder_tb
 -- Compiling architecture behave of cw_decoder_tb
 -- Loading entity cw_decoder
-
-} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity counter_tb
--- Compiling architecture behave of counter_tb
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading entity counter
 
 } {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd {1 {vcom -work processor -2002 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018

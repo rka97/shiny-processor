@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 library processor;
 use processor.p_constants.all;
 
--- Connects the RAM, Register File, ALSU together. Decodes Control Signals.
+-- Connects the RAM, Register File, ALSU together. Decodes control signals given by user input.
 -- Assume that B of ALU is TMP1
 entity manual_ctrl_tb is
 end manual_ctrl_tb;

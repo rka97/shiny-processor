@@ -6,18 +6,18 @@ use work.p_constants.all;
 library processor;
 
 entity fetch_operand is
-	generic(
-		counter_bits :integer:=2;
-		control_word_width :integer:=32
-		);
-	port(
+	generic (
+		counter_bits : integer := 2;
+		control_word_width : integer := 32
+    );
+	port (
 		clk, rst : in std_logic;
-		counter_rst, counter_enable : inout std_logic;--one counter for the whole SM
+		counter_rst, counter_enable : inout std_logic; -- one counter for the whole SM
 		src_or_dst : in std_logic;
 		Ri : in std_logic_vector(2 downto 0);
 		add_mode : in std_logic_vector(2 downto 0);
 		control_word : out std_logic_vector(control_word_width-1 downto 0)
-		);
+    );
 end fetch_operand;
 
 architecture behavioral of fetch_operand is
