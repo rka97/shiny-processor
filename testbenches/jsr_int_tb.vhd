@@ -98,7 +98,7 @@ port map (ir => ir, op => op,
 		severity error;
 		count <= "0100";
 		wait for 100 ps;
-		assert( op = ( IRout or F_A or PCin))
+		assert( op = ( BrIRout or F_A or PCin))
 		report  " error in hitr count 5"
 		severity error;
 		wait for 100 ps;
@@ -125,30 +125,21 @@ port map (ir => ir, op => op,
 		count <= "0011";
 		wait for 100 ps;
 		assert( op = ( SPout or MARin1 or RD))
-		report  " error in iret count 1"
+		report  " error in iret count 3"
 		severity error;
 		count <= "0100";
 		wait for 100 ps;
 		assert( op = (SPout or F_Ap1 or SPin))
-		report  " error in iret count 2"
+		report  " error in iret count 4"
 		severity error;
 		wait for 100 ps;
 		count <= "0101";
 		wait for 100 ps;
 		assert( op = ( MDRout or F_A or FLAGin))
-		report  " error in iret count 1"
+		report  " error in iret count 5"
 		severity error;
 		wait for 100 ps;
 
-		--case 5 HLT forcing counter values
-		ir <= "0001000000000000";
-		count <= "0000";
-		enable<='1';
-		wait for 100 ps;
-		assert( op = (HLT))
-		report  " error in HLT"
-		severity error;
-		
 		--case 6 NOP forcing counter values
 		ir <= "0000000000000000";
 		count <= "0000";
@@ -157,6 +148,15 @@ port map (ir => ir, op => op,
 		assert( op = (NoOP))
 		report  " error in NOP"
 		severity error;
+		wait for 100 ps;
+
+		--case 5 HLT forcing counter values
+		ir <= "0001000000000000";
+		wait for 100 ps;
+		assert( op = (HLT))
+		report  " error in HLT"
+		severity error;
+		wait for 100 ps;
 
             end process;
 end tb;

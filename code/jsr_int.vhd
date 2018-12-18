@@ -27,7 +27,7 @@ begin
 --        end if;
 --end process;
 
-process (count)
+process (ir,count)
 begin
 if (ir(15 downto 12 )= "0100")then
 	--when  =>
