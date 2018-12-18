@@ -89,6 +89,7 @@ begin
     ctrl_master_inst : entity processor.ctrl_master
         port map (
             clk => clk,
+            MDR_data => mdr_data_out,
             IR_data => IR_data_out,
             control_word => control_word
         );
@@ -97,13 +98,10 @@ begin
         begin
             wait for period;
             assert (control_word = (PCout or F_A or MARin or TMP1in or RD)) report "F&D: T0 is wrong!";
-            -- T0 assert
             wait for period;
             assert (control_word = (TMP1out or F_Ap1 or PCin)) report "F&D: T1 is wrong!";
-            -- T1 assert
             wait for period;
             assert (control_word = (MDRout or F_A or IRin)) report "F&D: T2 is wrong!";
-            -- T2 assert
         end process;
 
     process is

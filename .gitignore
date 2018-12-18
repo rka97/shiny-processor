@@ -64,6 +64,8 @@ webtalk.log
 webtalk_pn.xml
 *.mpf
 *.mti
+transcript
+*.wlf
 
 # generated folders
 iseconfig/
@@ -71,3 +73,4 @@ xlnx_auto_0_xdb/
 xst/
 _ngo/
 _xmsgs/
+/processor/
