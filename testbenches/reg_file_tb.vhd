@@ -26,6 +26,7 @@ architecture tb of reg_file_tb is
                 dst_sel => dst_sel,
                 data_1 => data_1,
                 data_2 => data_2,
+                mar_in1 => '0',
                 mdr_force_in => mdr_force_in,
                 flags_force_in => '0',
                 mdr_data_in => mdr_data_in,
