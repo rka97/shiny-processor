@@ -93,6 +93,7 @@ begin
                 next_state <= "11" when ((MDR_data(15 downto 14) = "00") or (MDR_data(15 downto 13) = "010")) else 
                               "01" when (MDR_data(15 downto 12) = "0110") else
                               "10";
+                next_state <= "00";
                 counter_rst <= '1';
             else -- Error state: we should never be here!
                 next_state <= "00";
