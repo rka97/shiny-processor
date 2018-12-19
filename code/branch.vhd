@@ -11,26 +11,29 @@ entity branch is
     );
     port(
 		clk, rst, z, c : in std_logic;
-        offset: in std_logic_vector(7 downto 0);
+        offset: in std_logic_vector(8 downto 0);
         instruction: in std_logic_vector(2 downto 0);
-        counter_rst, counter_enable : inout std_logic;
-		control_word : out std_logic_vector(control_word_width-1 downto 0)
+        counter_rst : inout std_logic;
+        control_word : out std_logic_vector(control_word_width-1 downto 0);
+        inner_state : out std_logic_vector(1 downto 0)
 	);
 end entity branch;
 
 architecture behavorial of branch is
     type state_type is (check_flags, execute_state, finished_state);
-    signal state : state_type := check_flags;
+    signal state : state_type := finished_state;
     signal count : std_logic_vector(counter_bits-1 downto 0);
 
     begin
-        branch_seq : process (clk, rst, instruction, offset, z, c, count, counter_rst, counter_enable)
+        branch_seq : process (clk, rst, instruction, offset, z, c, count, counter_rst)
         begin
             if (rst='1') then
                 state <= check_flags;
-            elsif rising_edge(clk) then
+                counter_rst <= '1';
+            elsif falling_edge(clk) then
                 case state is
                     when check_flags =>
+                        inner_state <= "00";
                         counter_rst <= '0';
                         if (instruction = "000") then
                             state <= execute_state;
@@ -51,14 +54,13 @@ architecture behavorial of branch is
                             counter_rst <= '1';
                         end if;
                     when execute_state =>
+                        inner_state <= "01";
                         if (counter_rst = '1') then
                             state <= finished_state;
                         elsif (to_integer(unsigned(count)) = 0) then
-                            state <= execute_state;
-                        elsif (to_integer(unsigned(count)) = 1) then
                             control_word <= PCout or F_A or TMP1in;
                             state <= execute_state;
-                        elsif (to_integer(unsigned(count)) = 2) then
+                        elsif (to_integer(unsigned(count)) = 1) then
                             control_word <= BrIRout or F_ApB or PCin;
                             state <= finished_state;
                             counter_rst <= '1';
@@ -67,12 +69,12 @@ architecture behavorial of branch is
                             counter_rst <= '1';
                         end if;
                     when finished_state =>
+                        inner_state <= "10";
                         state <= finished_state;
-                        counter_rst <= '1';
                 end case;
             end if;
         end process;
         counter1 : entity processor.counter 
-					generic map (n =>counter_bits) 
-					port map (clk => clk, rst => counter_rst,enable =>counter_enable, count =>count);
+					generic map (max_nbits =>counter_bits) 
+					port map (clk => clk, rst => counter_rst, enable => '1', count =>count);
 end architecture;
