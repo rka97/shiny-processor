@@ -21,7 +21,6 @@ architecture structural of reg_file is
     signal decoded_src_sel, decoded_dst_sel : std_logic_vector(num_reg-1 downto 0);
     signal mar_activation : std_logic := '0';
     begin
-
         decoded_src_sel <= src_sel when (src_en = '1') else (others => '0');
         decoded_dst_sel <= dst_sel when (dst_en = '1') else (others => '0');
         regs: for i in 0 to 7 generate -- change this, don't make it hard-coded
@@ -65,10 +64,10 @@ architecture structural of reg_file is
                 data_out_f => mar_data_out
             );
 
-        mdr_reg : entity processor.bi_reg
+        mdr_reg : entity processor.bi_reg_l
             generic map (N => N)
             port map (
-                clk => not(clk),
+                clk => clk,
                 enable => '1',
                 load_in => decoded_dst_sel(10),
                 write_out => decoded_src_sel(10),
@@ -79,7 +78,7 @@ architecture structural of reg_file is
                 data_out_f => mdr_data_out
             );
         
-        flags_reg : entity processor.bi_reg
+        flags_reg : entity processor.bi_reg_l
         generic map (N => N)
         port map (
             clk => clk,

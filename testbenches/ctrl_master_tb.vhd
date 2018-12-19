@@ -94,6 +94,12 @@ begin
             control_word => control_word
         );
     
+    process (IR_data_out)
+        begin
+            data_1 <= (10 downto 0 => IR_data_out(10 downto 0), others => '0') when (control_word(7) = '1') else (others => 'Z');
+            data_1 <= (9 downto 1 => IR_data_out(8 downto 0), others => '0') when (control_word(31 downto 28) = "1111") else (others => 'Z');
+        end process;
+
     process is
         begin
             wait for period;
