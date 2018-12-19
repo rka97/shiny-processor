@@ -1,0 +1,1324 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/mnt/01D35D8F61D34AA0/Projects/arch/arch labs
+Eadder
+Z0 w1545093373
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 d/home/abdo/Desktop/shiny-processor
+Z4 8/home/abdo/Desktop/shiny-processor/code/alsu/adder.vhd
+Z5 F/home/abdo/Desktop/shiny-processor/code/alsu/adder.vhd
+l0
+L4
+V[Fo]nDnb?FSdBZz7ocj6U2
+!s100 >;W]PY?I2153C5cVNK>Q82
+Z6 OV;C;10.6d;65
+33
+Z7 !s110 1545218475
+!i10b 1
+Z8 !s108 1545218475.000000
+Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/alsu/adder.vhd|
+Z10 !s107 /home/abdo/Desktop/shiny-processor/code/alsu/adder.vhd|
+!i113 1
+Z11 o-work work -2008 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+DEx4 work 5 adder 0 22 [Fo]nDnb?FSdBZz7ocj6U2
+l24
+L15
+V3j?Yo9WTfVY9^mQd_MObQ3
+!s100 LMW@_3JQ=5VmmL^PWF]Ne3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadder_tb
+Z13 w1543014460
+R1
+R2
+Z14 d/mnt/01D35D8F61D34AA0/Projects/arch/project
+Z15 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd
+Z16 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd
+l0
+L4
+V6o0^`Wzk9`UmT6NA8NEbg2
+!s100 aEh6?6Gok:W1lFCKWNzUe2
+R6
+32
+Z17 !s110 1545091332
+!i10b 1
+Z18 !s108 1545091332.000000
+Z19 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd|
+Z20 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd|
+!i113 1
+Z21 o-work processor -2002 -explicit
+R12
+Atb
+R1
+R2
+DEx4 work 8 adder_tb 0 22 6o0^`Wzk9`UmT6NA8NEbg2
+l25
+L7
+VU>l6MK<?jR2LlC4hXaEKX3
+!s100 ^L>WQMXBMSbif>69o5TC11
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R21
+R12
+Ealsu
+Z22 w1545185721
+R1
+R2
+R3
+Z23 8/home/abdo/Desktop/shiny-processor/code/alsu/alsu.vhd
+Z24 F/home/abdo/Desktop/shiny-processor/code/alsu/alsu.vhd
+l0
+L4
+Vfh7WAT^3Pk7WBlg2]LHfi1
+!s100 SPS@=?M2b8UN=C=IKhon[1
+R6
+33
+Z25 !s110 1545218481
+!i10b 1
+Z26 !s108 1545218481.000000
+Z27 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/alsu/alsu.vhd|
+Z28 !s107 /home/abdo/Desktop/shiny-processor/code/alsu/alsu.vhd|
+!i113 1
+R11
+R12
+Astructural
+R1
+R2
+DEx4 work 4 alsu 0 22 fh7WAT^3Pk7WBlg2]LHfi1
+l53
+L16
+VM<k72X=nJ<DLi9gVf9lJj1
+!s100 m:3E@==oL?gQiA2^<6Slc0
+R6
+33
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R11
+R12
+Ealsu_tb
+Z29 w1545061601
+R1
+R2
+R14
+Z30 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd
+Z31 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd
+l0
+L4
+V;_2_I65?E4N9TL@oQ]4h]1
+!s100 cl9[K8Rf^^UTG;ddB[3eA3
+R6
+32
+R17
+!i10b 1
+R18
+Z32 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd|
+Z33 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd|
+!i113 1
+R21
+R12
+Atb
+R1
+R2
+DEx4 work 7 alsu_tb 0 22 ;_2_I65?E4N9TL@oQ]4h]1
+l27
+L7
+V@>39XjjA8caZI@6Lkf>LB1
+!s100 ]YGRE?:FWGb_OJWi3i_jY1
+R6
+32
+R17
+!i10b 1
+R18
+R32
+R33
+!i113 1
+R21
+R12
+Earithmetic_unit
+R22
+R1
+R2
+R3
+Z34 8/home/abdo/Desktop/shiny-processor/code/alsu/arithmetic_unit.vhd
+Z35 F/home/abdo/Desktop/shiny-processor/code/alsu/arithmetic_unit.vhd
+l0
+L4
+VYDT]D_=G[_9I_A0PYg0]R1
+!s100 [@9RK_DMn^>2k6bEaRR0?1
+R6
+33
+Z36 !s110 1545218479
+!i10b 1
+Z37 !s108 1545218478.000000
+Z38 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/alsu/arithmetic_unit.vhd|
+Z39 !s107 /home/abdo/Desktop/shiny-processor/code/alsu/arithmetic_unit.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 15 arithmetic_unit 0 22 YDT]D_=G[_9I_A0PYg0]R1
+l32
+L16
+VfN`z=>9N=WjIMI?cVGg_<0
+!s100 nHPbCfJT9SNf?TC4c[8@32
+R6
+33
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R11
+R12
+Ebi_reg
+Z40 w1545007692
+R1
+R2
+R3
+Z41 8/home/abdo/Desktop/shiny-processor/code/bi_reg.vhd
+Z42 F/home/abdo/Desktop/shiny-processor/code/bi_reg.vhd
+l0
+L5
+V`zaFU_4?nW6[=b8E>BWTN2
+!s100 cTjN6Yla=gKZ=DA0=H[bJ2
+R6
+33
+Z43 !s110 1545218360
+!i10b 1
+Z44 !s108 1545218360.000000
+Z45 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/bi_reg.vhd|
+Z46 !s107 /home/abdo/Desktop/shiny-processor/code/bi_reg.vhd|
+!i113 1
+R11
+R12
+Astructural
+Z47 DEx9 processor 3 reg 0 22 l^Ol^UTU2>1U4MIIVDGJR2
+R1
+R2
+DEx4 work 6 bi_reg 0 22 `zaFU_4?nW6[=b8E>BWTN2
+l20
+L16
+V4Vn[?WL<b6GC5B0zZk3bH1
+!s100 7iAQlUcZ_o@FF_Hd9VnW60
+R6
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R11
+R12
+Ebi_reg_bare
+R40
+R1
+R2
+R3
+R41
+R42
+l0
+L39
+V6kH7j99^7b;BP@<X?^D:C3
+!s100 P08WHEFHfV61CiSk4CB<U2
+R6
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R11
+R12
+Astructural
+R47
+R1
+R2
+DEx4 work 11 bi_reg_bare 0 22 6kH7j99^7b;BP@<X?^D:C3
+l51
+L49
+VQH:QN?kXl:14Z[>1^V5S12
+!s100 1SB=c2PbRXaNOD6i@6VSb2
+R6
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R11
+R12
+Ebi_reg_tb
+Z48 w1544810023
+R1
+R2
+R14
+Z49 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd
+Z50 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd
+l0
+L5
+VK^EN5YCDz2iP>o:BXnHLa2
+!s100 POE8]a6d15UZU1e:V1M<`0
+R6
+32
+Z51 !s110 1545091331
+!i10b 1
+Z52 !s108 1545091331.000000
+Z53 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd|
+Z54 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd|
+!i113 1
+R21
+R12
+Atb
+DEx9 processor 6 bi_reg 0 22 d23Q]4:Ji_84<<W<6>F?k3
+R1
+R2
+DEx4 work 9 bi_reg_tb 0 22 K^EN5YCDz2iP>o:BXnHLa2
+l14
+L8
+VBkdE_1ONF?Rlj?bJe^9^O1
+!s100 8^Fi8W4cP@PU]AZ02<CIn1
+R6
+32
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R21
+R12
+Ebranch
+Z55 w1545229369
+Z56 DPx4 work 11 p_constants 0 22 3Xz5gz<L^2eRD3Z0@QIYJ1
+Z57 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+Z58 8/home/abdo/Desktop/shiny-processor/code/branch.vhd
+Z59 F/home/abdo/Desktop/shiny-processor/code/branch.vhd
+l0
+L7
+VLM^lomzgeiem?Q4c55zo01
+!s100 o?fRPlc=^EZV_`GY_B6Ed3
+R6
+33
+Z60 !s110 1545229380
+!i10b 1
+Z61 !s108 1545229380.000000
+Z62 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/branch.vhd|
+Z63 !s107 /home/abdo/Desktop/shiny-processor/code/branch.vhd|
+!i113 1
+R11
+R12
+Abehavorial
+Z64 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z65 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z66 DEx9 processor 7 counter 0 22 P_aohSm2MZTU3n>_=nMWE2
+R56
+R57
+R1
+R2
+DEx4 work 6 branch 0 22 LM^lomzgeiem?Q4c55zo01
+l27
+L22
+V3ehoFT?7hhYYFI;Ck2Bm_3
+!s100 @1boc;3_lBUJ;lMzAMn1f3
+R6
+33
+R60
+!i10b 1
+R61
+R62
+R63
+!i113 1
+R11
+R12
+Ebranch_tb
+Z67 w1545230611
+R1
+R2
+R3
+Z68 8/home/abdo/Desktop/shiny-processor/testbenches/branch_tb.vhd
+Z69 F/home/abdo/Desktop/shiny-processor/testbenches/branch_tb.vhd
+l0
+L5
+Vn2bKHgTB];f7PFEUnn11S3
+!s100 _V^Vaf4Mn3>?dz;VCD;[J0
+R6
+33
+Z70 !s110 1545230618
+!i10b 1
+Z71 !s108 1545230618.000000
+Z72 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/testbenches/branch_tb.vhd|
+Z73 !s107 /home/abdo/Desktop/shiny-processor/testbenches/branch_tb.vhd|
+!i113 1
+R11
+R12
+Atb
+Z74 DPx9 processor 11 p_constants 0 22 3Xz5gz<L^2eRD3Z0@QIYJ1
+R57
+Z75 DEx9 processor 6 branch 0 22 LM^lomzgeiem?Q4c55zo01
+R1
+R2
+DEx4 work 9 branch_tb 0 22 n2bKHgTB];f7PFEUnn11S3
+l20
+L8
+VFA>Z0j4P@lQhW?BZD8RRY2
+!s100 iWSMn5nMoAOdz1Khj@B<62
+R6
+33
+R70
+!i10b 1
+R71
+R72
+R73
+!i113 1
+R11
+R12
+Ecounter
+R22
+R64
+R65
+R1
+R2
+R3
+Z76 8/home/abdo/Desktop/shiny-processor/code/counter.vhd
+Z77 F/home/abdo/Desktop/shiny-processor/code/counter.vhd
+l0
+L6
+VP_aohSm2MZTU3n>_=nMWE2
+!s100 UH8<2H?Go><UH7;dcdQRn2
+R6
+33
+Z78 !s110 1545218386
+!i10b 1
+Z79 !s108 1545218386.000000
+Z80 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/counter.vhd|
+Z81 !s107 /home/abdo/Desktop/shiny-processor/code/counter.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R64
+R65
+R1
+R2
+DEx4 work 7 counter 0 22 P_aohSm2MZTU3n>_=nMWE2
+l14
+L13
+V=a8<`?hP]@J@Y6^GPo6J`2
+!s100 [lb[X5GRDz7FOl2Cce[Mi2
+R6
+33
+R78
+!i10b 1
+R79
+R80
+R81
+!i113 1
+R11
+R12
+Ecounter_tb
+Z82 w1544965680
+R1
+R2
+R14
+Z83 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd
+Z84 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd
+l0
+L5
+V>6B[I5We`QTfIPzzE<YWQ1
+!s100 gVJ6gYj2=ZL2LP?:W;VgX3
+R6
+32
+R51
+!i10b 1
+R52
+Z85 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd|
+Z86 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd|
+!i113 1
+R21
+R12
+Abehave
+R64
+R65
+DEx9 processor 7 counter 0 22 QnBCPQQz1E`iE?DFS1nhY0
+R1
+R2
+DEx4 work 10 counter_tb 0 22 >6B[I5We`QTfIPzzE<YWQ1
+l13
+L8
+V`>W4H1UClCK3]WBfSzOOk0
+!s100 KA2eYVGN;kcQEm14WIJ5P0
+R6
+32
+R51
+!i10b 1
+R52
+R85
+R86
+!i113 1
+R21
+R12
+Ectrl_master
+R22
+R57
+R74
+R1
+R2
+R3
+Z87 8/home/abdo/Desktop/shiny-processor/code/ctrl_master.vhd
+Z88 F/home/abdo/Desktop/shiny-processor/code/ctrl_master.vhd
+l0
+L6
+V7lYFzY=a:VQL[T8PUKilG1
+!s100 TD?6j9Saa[oA:9k>HFeA[3
+R6
+33
+Z89 !s110 1545219599
+!i10b 1
+Z90 !s108 1545219599.000000
+Z91 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/ctrl_master.vhd|
+Z92 !s107 /home/abdo/Desktop/shiny-processor/code/ctrl_master.vhd|
+!i113 1
+R11
+R12
+Amixed
+R64
+R65
+R66
+R57
+R74
+R1
+R2
+DEx4 work 11 ctrl_master 0 22 7lYFzY=a:VQL[T8PUKilG1
+l33
+L15
+V>?LRcn2WRYZ<ngT2MID=_0
+!s100 n<V=^dGlKgKT9gOAfm4P23
+R6
+33
+R89
+!i10b 1
+R90
+R91
+R92
+!i113 1
+R11
+R12
+Ectrl_master_tb
+Z93 w1545228396
+R57
+R74
+R1
+R2
+R3
+Z94 8/home/abdo/Desktop/shiny-processor/testbenches/ctrl_master_tb.vhd
+Z95 F/home/abdo/Desktop/shiny-processor/testbenches/ctrl_master_tb.vhd
+l0
+L8
+V=2007?Y41T0Ejj^<ge4TU0
+!s100 Ff82BKzE0cEjbG6eNg=5N1
+R6
+33
+Z96 !s110 1545228401
+!i10b 1
+Z97 !s108 1545228401.000000
+Z98 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/testbenches/ctrl_master_tb.vhd|
+Z99 !s107 /home/abdo/Desktop/shiny-processor/testbenches/ctrl_master_tb.vhd|
+!i113 1
+R11
+R12
+Abehave
+R75
+DEx9 processor 11 ctrl_master 0 22 7lYFzY=a:VQL[T8PUKilG1
+DEx9 processor 4 alsu 0 22 fh7WAT^3Pk7WBlg2]LHfi1
+DEx9 processor 3 ram 0 22 aLlK<@=bDBW<47C4[D_L:1
+DEx9 processor 8 reg_file 0 22 ]_zDXg@NAEmNaz57zkHzH3
+DEx9 processor 10 cw_decoder 0 22 5F>BVe;g<Hd]R4=@A@2kC2
+R57
+R74
+R1
+R2
+DEx4 work 14 ctrl_master_tb 0 22 =2007?Y41T0Ejj^<ge4TU0
+l23
+L11
+VzmE3Nj@f[S1aQP<1dLXXA1
+!s100 a4K6N=<GZz6n?kGZ]O]^R2
+R6
+33
+R96
+!i10b 1
+R97
+R98
+R99
+!i113 1
+R11
+R12
+Ectrl_signals_tb
+Z100 w1545090426
+R57
+Z101 DPx9 processor 11 p_constants 0 22 =fd6[@Zm?Y4g[mSDiHKka2
+R1
+R2
+R14
+Z102 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd
+Z103 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd
+l0
+L8
+V;^A`[@k`=iZ9IJi]5gcHh0
+!s100 WPU3Bl9S?FUYR8ka@DCmc1
+R6
+33
+Z104 !s110 1545090865
+!i10b 1
+Z105 !s108 1545090865.000000
+Z106 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd|
+Z107 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd|
+!i113 1
+Z108 o-work processor -2008 -explicit
+R12
+Abehave
+Z109 DEx9 processor 4 alsu 0 22 0G=@IYEoT7^ZDhoJ_gRPM1
+Z110 DEx9 processor 3 ram 0 22 Mlf0=G8:oT``]LERi8[o52
+Z111 DEx9 processor 8 reg_file 0 22 Wil2eaPe4CSM1LlQQQ5gF0
+Z112 DEx9 processor 10 cw_decoder 0 22 OKJ8H]CX[n`HJkZ]BP4FY0
+R57
+R101
+R1
+R2
+DEx4 work 15 ctrl_signals_tb 0 22 ;^A`[@k`=iZ9IJi]5gcHh0
+l20
+L11
+VOYhd8AYSQFKN7XJOT1dIL1
+!s100 3F1ZkXGKig0<O61P[F:h71
+R6
+33
+R104
+!i10b 1
+R105
+R106
+R107
+!i113 1
+R108
+R12
+Ecw_decoder
+R22
+R1
+R2
+R3
+Z113 8/home/abdo/Desktop/shiny-processor/code/cw_decoder.vhd
+Z114 F/home/abdo/Desktop/shiny-processor/code/cw_decoder.vhd
+l0
+L6
+V5F>BVe;g<Hd]R4=@A@2kC2
+!s100 G55>I7TGF0kl5zXKMHKg12
+R6
+33
+Z115 !s110 1545218373
+!i10b 1
+Z116 !s108 1545218373.000000
+Z117 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/cw_decoder.vhd|
+Z118 !s107 /home/abdo/Desktop/shiny-processor/code/cw_decoder.vhd|
+!i113 1
+R11
+R12
+Amixed
+R57
+DEx9 processor 7 decoder 0 22 5j^9dT]P9k9nZ50YEJR[52
+R1
+R2
+DEx4 work 10 cw_decoder 0 22 5F>BVe;g<Hd]R4=@A@2kC2
+l24
+L22
+VcH@hE=oUXAHCOlkBk9;eY0
+!s100 LHH5Cgj1cli>VnmBYf6_M2
+R6
+33
+R115
+!i10b 1
+R116
+R117
+R118
+!i113 1
+R11
+R12
+Ecw_decoder_tb
+Z119 w1545078473
+R57
+R101
+R1
+R2
+R14
+Z120 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd
+Z121 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd
+l0
+L6
+VB;oY@g@dkg@`@EcM=n8LD3
+!s100 Sb:N@k3EKK8@hOkig=K_X3
+R6
+33
+R17
+!i10b 1
+R18
+Z122 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd|
+Z123 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd|
+!i113 1
+R108
+R12
+Abehave
+R112
+R57
+R101
+R1
+R2
+DEx4 work 13 cw_decoder_tb 0 22 B;oY@g@dkg@`@EcM=n8LD3
+l15
+L9
+VH8HL`L9AQKozLEE@R`9nS0
+!s100 gmcORz?F1ikPJdTWd=R6Y0
+R6
+33
+R17
+!i10b 1
+R18
+R122
+R123
+!i113 1
+R108
+R12
+Edecoder
+R40
+R57
+R1
+R2
+R3
+Z124 8/home/abdo/Desktop/shiny-processor/code/decoder.vhd
+Z125 F/home/abdo/Desktop/shiny-processor/code/decoder.vhd
+l0
+L5
+V5j^9dT]P9k9nZ50YEJR[52
+!s100 ?m1?iLT:6oahmG>Ld94a42
+R6
+33
+Z126 !s110 1545218340
+!i10b 1
+Z127 !s108 1545218340.000000
+Z128 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/decoder.vhd|
+Z129 !s107 /home/abdo/Desktop/shiny-processor/code/decoder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R57
+R1
+R2
+DEx4 work 7 decoder 0 22 5j^9dT]P9k9nZ50YEJR[52
+l16
+L15
+VjBTT5Ab3ZXVK^>TJ0oS<X1
+!s100 IDDFeGRKno@HVid>F5A?a1
+R6
+33
+R126
+!i10b 1
+R127
+R128
+R129
+!i113 1
+R11
+R12
+Edecoder_tb
+Z130 w1544624975
+R1
+R2
+R14
+Z131 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
+Z132 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
+l0
+L5
+V_FHCnQ?:ZbO6@1AiSVSc72
+!s100 4mm<Y716XF9M?Q8MDCK@e1
+R6
+32
+R51
+!i10b 1
+R52
+Z133 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd|
+Z134 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd|
+!i113 1
+R21
+R12
+Abehave
+R57
+DEx9 processor 7 decoder 0 22 7aej1MHk>IM5=E]`3UV5F2
+R1
+R2
+DEx4 work 10 decoder_tb 0 22 _FHCnQ?:ZbO6@1AiSVSc72
+l13
+L8
+V^0K]RTfiGPK=6CkoOFh?N0
+!s100 dVd@YXeaDSN2]Vck>99Y@1
+R6
+32
+R51
+!i10b 1
+R52
+R133
+R134
+!i113 1
+R21
+R12
+Efetch_operand
+R22
+R57
+R56
+R64
+R65
+R1
+R2
+R3
+8/home/abdo/Desktop/shiny-processor/code/fetch_operand.vhd
+F/home/abdo/Desktop/shiny-processor/code/fetch_operand.vhd
+l0
+L8
+V:kALfOAToB7?A]=l[XjBU2
+!s100 33Hm@iYlPCBdF8B[4002I0
+R6
+33
+!s110 1545218392
+!i10b 1
+!s108 1545218392.000000
+!s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/fetch_operand.vhd|
+!s107 /home/abdo/Desktop/shiny-processor/code/fetch_operand.vhd|
+!i113 1
+R11
+R12
+Efull_adder
+R0
+R1
+R2
+R3
+Z135 8/home/abdo/Desktop/shiny-processor/code/alsu/full_adder.vhd
+Z136 F/home/abdo/Desktop/shiny-processor/code/alsu/full_adder.vhd
+l0
+L4
+VUL0XPj?Tkb[D]5:J59`B?3
+!s100 >RzmkRPY1g<zE<z8z:_902
+R6
+33
+Z137 !s110 1545218463
+!i10b 1
+Z138 !s108 1545218463.000000
+Z139 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/alsu/full_adder.vhd|
+Z140 !s107 /home/abdo/Desktop/shiny-processor/code/alsu/full_adder.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 10 full_adder 0 22 UL0XPj?Tkb[D]5:J59`B?3
+l12
+L11
+VI:?`03<z4U5V];m;21W3W1
+!s100 6DMR]g:F[Yl4`0WG6YS^I0
+R6
+33
+R137
+!i10b 1
+R138
+R139
+R140
+!i113 1
+R11
+R12
+Ejsr_int
+R22
+R74
+R57
+R1
+R2
+R3
+8/home/abdo/Desktop/shiny-processor/code/jsr_int.vhd
+F/home/abdo/Desktop/shiny-processor/code/jsr_int.vhd
+l0
+L6
+Veh^TIRmjSiXPEY8iRD8EI2
+!s100 [DYo9nRnJY[aVNY>JXb8A3
+R6
+33
+!s110 1545218493
+!i10b 1
+!s108 1545218492.000000
+!s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/jsr_int.vhd|
+!s107 /home/abdo/Desktop/shiny-processor/code/jsr_int.vhd|
+!i113 1
+R11
+R12
+Elogic_unit
+R0
+R1
+R2
+R3
+Z141 8/home/abdo/Desktop/shiny-processor/code/alsu/logic_unit.vhd
+Z142 F/home/abdo/Desktop/shiny-processor/code/alsu/logic_unit.vhd
+l0
+L4
+VAf_DCVGCU4@<cmElf=ZeJ1
+!s100 kNLgO<?Y?chUjCF^:aNg=3
+R6
+33
+Z143 !s110 1545218468
+!i10b 1
+Z144 !s108 1545218468.000000
+Z145 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/alsu/logic_unit.vhd|
+Z146 !s107 /home/abdo/Desktop/shiny-processor/code/alsu/logic_unit.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 10 logic_unit 0 22 Af_DCVGCU4@<cmElf=ZeJ1
+l15
+L14
+V=U4[9al8fKOW16:RL5@Wi2
+!s100 faz7Y@:6:ILWXIAP;IgGg1
+R6
+33
+R143
+!i10b 1
+R144
+R145
+R146
+!i113 1
+R11
+R12
+Emanual_ctrl_tb
+Z147 w1545091323
+R57
+R101
+R1
+R2
+R14
+R102
+R103
+l0
+L8
+V5Q1NMaGR=UCh9bGVJh;^O0
+!s100 Y>g8n]DohK5nHGHAT<gRZ0
+R6
+33
+R17
+!i10b 1
+R18
+R106
+R107
+!i113 1
+R108
+R12
+Abehave
+R109
+R110
+R111
+R112
+R57
+R101
+R1
+R2
+DEx4 work 14 manual_ctrl_tb 0 22 5Q1NMaGR=UCh9bGVJh;^O0
+l20
+L11
+VCjibd8D8]fCAVdU[QMiO>2
+!s100 ?XKofUb?I1_4V19oNR1e@3
+R6
+33
+R17
+!i10b 1
+R18
+R106
+R107
+!i113 1
+R108
+R12
+Pp_constants
+R57
+R1
+R2
+R22
+R3
+8/home/abdo/Desktop/shiny-processor/code/constants.vhd
+F/home/abdo/Desktop/shiny-processor/code/constants.vhd
+l0
+L5
+V3Xz5gz<L^2eRD3Z0@QIYJ1
+!s100 h]eLL2j4e`BL[0HN1NXk?2
+R6
+33
+!s110 1545218379
+!i10b 1
+!s108 1545218379.000000
+!s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/constants.vhd|
+!s107 /home/abdo/Desktop/shiny-processor/code/constants.vhd|
+!i113 1
+R11
+R12
+Eram
+R22
+R57
+R1
+R2
+R3
+Z148 8/home/abdo/Desktop/shiny-processor/code/ram.vhd
+Z149 F/home/abdo/Desktop/shiny-processor/code/ram.vhd
+l0
+L6
+VaLlK<@=bDBW<47C4[D_L:1
+!s100 8VhCQNI1QKjUV6G0BAFYm0
+R6
+33
+Z150 !s110 1545218347
+!i10b 1
+Z151 !s108 1545218347.000000
+Z152 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/ram.vhd|
+Z153 !s107 /home/abdo/Desktop/shiny-processor/code/ram.vhd|
+!i113 1
+R11
+R12
+Amixed_ram
+R57
+R1
+R2
+DEx4 work 3 ram 0 22 aLlK<@=bDBW<47C4[D_L:1
+l26
+L18
+V3Uh?]lc_8Ah11WS81=Ia<3
+!s100 6>2lW>z^]b@f_EOG@RMU`3
+R6
+33
+R150
+!i10b 1
+R151
+R152
+R153
+!i113 1
+R11
+R12
+Eram_tb
+Z154 w1545060558
+R1
+R2
+R14
+Z155 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd
+Z156 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd
+l0
+L5
+V;d;l=Dkc[SfJD_cY0fYGI2
+!s100 7gBEXcOiIjBkfCQ60lR<a3
+R6
+32
+R17
+!i10b 1
+R18
+Z157 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd|
+Z158 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd|
+!i113 1
+R21
+R12
+Atb
+R57
+R110
+R1
+R2
+DEx4 work 6 ram_tb 0 22 ;d;l=Dkc[SfJD_cY0fYGI2
+l14
+L8
+VZjc6<34jWHYidA9VUkOKT3
+!s100 lbZj6H7zhCCF[VfhEDG2f2
+R6
+32
+R17
+!i10b 1
+R18
+R157
+R158
+!i113 1
+R21
+R12
+Eram_testbench
+Z159 w1544909190
+R57
+R1
+R2
+R14
+Z160 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd
+Z161 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd
+l0
+L7
+VfhRc6B[ZN<HWH;FE81>Dd1
+!s100 P6iE:2CbTFTI`4UPj>E;X0
+R6
+32
+R51
+!i10b 1
+R52
+Z162 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd|
+Z163 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd|
+!i113 1
+R21
+R12
+Amixed_testbench
+R57
+R1
+R2
+DEx4 work 13 ram_testbench 0 22 fhRc6B[ZN<HWH;FE81>Dd1
+l27
+L10
+V3O`Y3<zzD4jNEW0YHM<]H0
+!s100 odO:aF3PeJD`UgFO8OEoG2
+R6
+32
+R51
+!i10b 1
+R52
+R162
+R163
+!i113 1
+R21
+R12
+Ereg
+R22
+R1
+R2
+R3
+Z164 8/home/abdo/Desktop/shiny-processor/code/reg.vhd
+Z165 F/home/abdo/Desktop/shiny-processor/code/reg.vhd
+l0
+L4
+Vl^Ol^UTU2>1U4MIIVDGJR2
+!s100 UehzZbM]^U:4j`3KJ85V=0
+R6
+33
+Z166 !s110 1545218354
+!i10b 1
+Z167 !s108 1545218354.000000
+Z168 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/reg.vhd|
+Z169 !s107 /home/abdo/Desktop/shiny-processor/code/reg.vhd|
+!i113 1
+R11
+R12
+Abehavorial
+R1
+R2
+DEx4 work 3 reg 0 22 l^Ol^UTU2>1U4MIIVDGJR2
+l15
+L14
+VU?bKnoX[1n7ZHdSiDe`7;2
+!s100 N0jYXXgbg?OMa<_47b<Ng2
+R6
+33
+R166
+!i10b 1
+R167
+R168
+R169
+!i113 1
+R11
+R12
+Ereg_file
+R0
+R1
+R2
+R3
+Z170 8/home/abdo/Desktop/shiny-processor/code/reg_file.vhd
+Z171 F/home/abdo/Desktop/shiny-processor/code/reg_file.vhd
+l0
+L5
+V]_zDXg@NAEmNaz57zkHzH3
+!s100 P3Qo[l1U5VG_z2N9`WT]d1
+R6
+33
+Z172 !s110 1545218368
+!i10b 1
+Z173 !s108 1545218368.000000
+Z174 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/reg_file.vhd|
+Z175 !s107 /home/abdo/Desktop/shiny-processor/code/reg_file.vhd|
+!i113 1
+R11
+R12
+Astructural
+DEx9 processor 6 bi_reg 0 22 `zaFU_4?nW6[=b8E>BWTN2
+DEx9 processor 11 bi_reg_bare 0 22 6kH7j99^7b;BP@<X?^D:C3
+R1
+R2
+DEx4 work 8 reg_file 0 22 ]_zDXg@NAEmNaz57zkHzH3
+l23
+L20
+V@1A:6:<EU>=BAMKgWP;kM1
+!s100 >^J:U>?T4eQ^l8cQE3A9Q1
+R6
+33
+R172
+!i10b 1
+R173
+R174
+R175
+!i113 1
+R11
+R12
+Ereg_file_tb
+Z176 w1545087115
+R1
+R2
+R14
+Z177 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
+Z178 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
+l0
+L5
+Vhi`]3b`C@e0;_NjHhXUk?3
+!s100 61;@ZCj;5Q<VR=5nSV2?j2
+R6
+32
+R51
+!i10b 1
+R52
+Z179 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
+Z180 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
+!i113 1
+R21
+R12
+Atb
+R111
+R1
+R2
+DEx4 work 11 reg_file_tb 0 22 hi`]3b`C@e0;_NjHhXUk?3
+l15
+L8
+V2>lCSDB5i0O<o[2>l0ADR3
+!s100 ElEbJ>eYdOYPaPCKgXBf?0
+R6
+32
+R51
+!i10b 1
+R52
+R179
+R180
+!i113 1
+R21
+R12
+Ereg_tb
+Z181 w1544623814
+R1
+R2
+R14
+Z182 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
+Z183 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
+l0
+L5
+Va4BnNGmhCER1BGQz0C];<3
+!s100 GaY5W<o6`iiGo[kBBOjH93
+R6
+32
+R51
+!i10b 1
+R52
+Z184 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd|
+Z185 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd|
+!i113 1
+R21
+R12
+Atb
+DEx9 processor 3 reg 0 22 TfYE1LE2VkiB=?6gihUK20
+R1
+R2
+DEx4 work 6 reg_tb 0 22 a4BnNGmhCER1BGQz0C];<3
+l14
+L8
+VjG=2YQeZlaR?`15HVBV_H3
+!s100 G364D:K]R]K@Vn7^la^fk1
+R6
+32
+R51
+!i10b 1
+R52
+R184
+R185
+!i113 1
+R21
+R12
+Eshift_unit
+R22
+R1
+R2
+R3
+Z186 8/home/abdo/Desktop/shiny-processor/code/alsu/shift_unit.vhd
+Z187 F/home/abdo/Desktop/shiny-processor/code/alsu/shift_unit.vhd
+l0
+L4
+V9AR2>hkHFNC;NZ_?Fm?Ue2
+!s100 l0Q<c@4KDO2CFj9^V;bOc1
+R6
+33
+Z188 !s110 1545218471
+!i10b 1
+Z189 !s108 1545218470.000000
+Z190 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/alsu/shift_unit.vhd|
+Z191 !s107 /home/abdo/Desktop/shiny-processor/code/alsu/shift_unit.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 10 shift_unit 0 22 9AR2>hkHFNC;NZ_?Fm?Ue2
+l16
+L15
+VLjAB?QI31S:P5gQTF8i>m3
+!s100 SXNLjLQ7Y5=167bW:Afj>3
+R6
+33
+R188
+!i10b 1
+R189
+R190
+R191
+!i113 1
+R11
+R12
