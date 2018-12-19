@@ -17,28 +17,28 @@ Z4 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd
 Z5 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd
 l0
 L4
-V0FDU]dU^IccU^f9mS2XhB3
+VUQI:ZUN2J9NGW8imU<GcZ3
 !s100 >;W]PY?I2153C5cVNK>Q82
 Z6 OV;C;10.6d;65
-32
-Z7 !s110 1545091332
+33
+Z7 !s110 1545223977
 !i10b 1
-Z8 !s108 1545091332.000000
-Z9 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd|
+Z8 !s108 1545223977.000000
+Z9 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd|
 Z10 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/adder.vhd|
 !i113 1
-Z11 o-work processor -2002 -explicit
+Z11 o-work processor -2008 -explicit
 Z12 tExplicit 1 CvgOpt 0
 Astructural
 R1
 R2
-DEx4 work 5 adder 0 22 0FDU]dU^IccU^f9mS2XhB3
+DEx4 work 5 adder 0 22 UQI:ZUN2J9NGW8imU<GcZ3
 l24
 L15
-VZ0?9<?d5In0[`MK@9HTeY1
+VP9@Qb61WkMe5Y>f@Z=99S1
 !s100 LMW@_3JQ=5VmmL^PWF]Ne3
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -56,14 +56,14 @@ Z14 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd
 Z15 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd
 l0
 L4
-V6o0^`Wzk9`UmT6NA8NEbg2
+VWXMIA3EjVA;`hnEdj;N^]3
 !s100 aEh6?6Gok:W1lFCKWNzUe2
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z16 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd|
+Z16 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd|
 Z17 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/adder_tb.vhd|
 !i113 1
 R11
@@ -71,13 +71,13 @@ R12
 Atb
 R1
 R2
-DEx4 work 8 adder_tb 0 22 6o0^`Wzk9`UmT6NA8NEbg2
+DEx4 work 8 adder_tb 0 22 WXMIA3EjVA;`hnEdj;N^]3
 l25
 L7
-VU>l6MK<?jR2LlC4hXaEKX3
+Vef<]D8f`70zFM=TDhGL1K0
 !s100 ^L>WQMXBMSbif>69o5TC11
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -87,7 +87,7 @@ R17
 R11
 R12
 Ealsu
-Z18 w1543017719
+Z18 w1545142142
 R1
 R2
 R3
@@ -95,14 +95,14 @@ Z19 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/alsu.vhd
 Z20 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/alsu.vhd
 l0
 L4
-V0G=@IYEoT7^ZDhoJ_gRPM1
-!s100 k_<fXNeZAgPXnUI]W4Pic0
+V9G^Wjkdl@3:_mj[EGF_hm1
+!s100 SPS@=?M2b8UN=C=IKhon[1
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z21 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/alsu.vhd|
+Z21 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/alsu.vhd|
 Z22 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/alsu.vhd|
 !i113 1
 R11
@@ -110,13 +110,13 @@ R12
 Astructural
 R1
 R2
-DEx4 work 4 alsu 0 22 0G=@IYEoT7^ZDhoJ_gRPM1
-l56
+DEx4 work 4 alsu 0 22 9G^Wjkdl@3:_mj[EGF_hm1
+l53
 L16
-Vg4o`1=Y[Tn9QYWBkPiVgV0
-!s100 j]7m]W7lRN9f4GINkAY333
+V?5NKJ0OlXW:lP6^aneAo21
+!s100 m:3E@==oL?gQiA2^<6Slc0
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -126,7 +126,7 @@ R22
 R11
 R12
 Ealsu_tb
-Z23 w1545061601
+Z23 w1545140240
 R1
 R2
 R3
@@ -134,14 +134,14 @@ Z24 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd
 Z25 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd
 l0
 L4
-V;_2_I65?E4N9TL@oQ]4h]1
+VGk9<e^5Qak3T8i><k;k[<3
 !s100 cl9[K8Rf^^UTG;ddB[3eA3
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z26 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd|
+Z26 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd|
 Z27 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/alsu_tb.vhd|
 !i113 1
 R11
@@ -149,13 +149,13 @@ R12
 Atb
 R1
 R2
-DEx4 work 7 alsu_tb 0 22 ;_2_I65?E4N9TL@oQ]4h]1
+DEx4 work 7 alsu_tb 0 22 Gk9<e^5Qak3T8i><k;k[<3
 l27
 L7
-V@>39XjjA8caZI@6Lkf>LB1
-!s100 ]YGRE?:FWGb_OJWi3i_jY1
+V6SeF2:9L<4H8Xn_m5F7O90
+!s100 oCmUODNE7gH5C?]SbU=Uf0
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -165,7 +165,7 @@ R27
 R11
 R12
 Earithmetic_unit
-Z28 w1545063267
+Z28 w1545141082
 R1
 R2
 R3
@@ -173,14 +173,14 @@ Z29 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/arithmetic_unit.vhd
 Z30 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/arithmetic_unit.vhd
 l0
 L4
-VBRUG:V41PS6>=l:2U0LTH2
-!s100 U?N^5L]dl<_X6<BX00@]O3
+VH?mWbd1cHDJ0iHWMPKAi@3
+!s100 [@9RK_DMn^>2k6bEaRR0?1
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z31 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/arithmetic_unit.vhd|
+Z31 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/arithmetic_unit.vhd|
 Z32 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/arithmetic_unit.vhd|
 !i113 1
 R11
@@ -188,13 +188,13 @@ R12
 Abehavioral
 R1
 R2
-DEx4 work 15 arithmetic_unit 0 22 BRUG:V41PS6>=l:2U0LTH2
+DEx4 work 15 arithmetic_unit 0 22 H?mWbd1cHDJ0iHWMPKAi@3
 l32
 L16
-VFCl0oSFd4HW0g@_Hf3X^F0
-!s100 UOb9A>=UC9IMF_YcbS4Lc1
+VF^>9V<E:AQfQFcJ`UTIQ`0
+!s100 nHPbCfJT9SNf?TC4c[8@32
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -212,29 +212,29 @@ Z34 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd
 Z35 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd
 l0
 L5
-Vd23Q]4:Ji_84<<W<6>F?k3
+VkX<RLjWD^JEVM0z8EBXi90
 !s100 cTjN6Yla=gKZ=DA0=H[bJ2
 R6
-32
-Z36 !s110 1545091331
+33
+Z36 !s110 1545223976
 !i10b 1
-Z37 !s108 1545091331.000000
-Z38 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd|
+Z37 !s108 1545223976.000000
+Z38 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd|
 Z39 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/bi_reg.vhd|
 !i113 1
 R11
 R12
 Astructural
-Z40 DEx9 processor 3 reg 0 22 TfYE1LE2VkiB=?6gihUK20
+Z40 DEx9 processor 3 reg 0 22 ?WoHPFk;W]Wbo@oZS^M>>3
 R1
 R2
-DEx4 work 6 bi_reg 0 22 d23Q]4:Ji_84<<W<6>F?k3
+DEx4 work 6 bi_reg 0 22 kX<RLjWD^JEVM0z8EBXi90
 l20
 L16
-V6ldGo]9A1FYRmeHM=06AI2
+V>eoY9XdmNkARC=;QRPZ511
 !s100 7iAQlUcZ_o@FF_Hd9VnW60
 R6
-32
+33
 R36
 !i10b 1
 R37
@@ -252,10 +252,10 @@ R34
 R35
 l0
 L39
-V29?Iz>Z@m4]90l9XiATNU1
+VGG9572;o_]`3aYM@PO<oW0
 !s100 P08WHEFHfV61CiSk4CB<U2
 R6
-32
+33
 R36
 !i10b 1
 R37
@@ -268,13 +268,13 @@ Astructural
 R40
 R1
 R2
-DEx4 work 11 bi_reg_bare 0 22 29?Iz>Z@m4]90l9XiATNU1
+DEx4 work 11 bi_reg_bare 0 22 GG9572;o_]`3aYM@PO<oW0
 l51
 L49
-VZ6Ti3:0bd4F>Al:JdafI:1
+V7Kn?6iMh@iIW;Y:c6`<R^3
 !s100 1SB=c2PbRXaNOD6i@6VSb2
 R6
-32
+33
 R36
 !i10b 1
 R37
@@ -292,29 +292,29 @@ Z42 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd
 Z43 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd
 l0
 L5
-VK^EN5YCDz2iP>o:BXnHLa2
+V^XG?5znaE:5X=h]?N9:e=2
 !s100 POE8]a6d15UZU1e:V1M<`0
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z44 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd|
+Z44 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd|
 Z45 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/bi_reg_tb.vhd|
 !i113 1
 R11
 R12
 Atb
-Z46 DEx9 processor 6 bi_reg 0 22 d23Q]4:Ji_84<<W<6>F?k3
+Z46 DEx9 processor 6 bi_reg 0 22 kX<RLjWD^JEVM0z8EBXi90
 R1
 R2
-DEx4 work 9 bi_reg_tb 0 22 K^EN5YCDz2iP>o:BXnHLa2
+DEx4 work 9 bi_reg_tb 0 22 ^XG?5znaE:5X=h]?N9:e=2
 l14
 L8
-VBkdE_1ONF?Rlj?bJe^9^O1
+V?o4k8C9_^L^646LN>EnZl0
 !s100 8^Fi8W4cP@PU]AZ02<CIn1
 R6
-32
+33
 R36
 !i10b 1
 R37
@@ -343,123 +343,218 @@ R6
 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/abdo/Desktop/shiny-processor/code/branches.vhd|
 !s107 /home/abdo/Desktop/shiny-processor/code/branches.vhd|
 !i113 1
-o-work work -2008 -explicit
+Z48 o-work work -2008 -explicit
 R12
 Ecounter
-Z48 w1544965402
-Z49 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z50 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z49 w1545168588
+Z50 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z51 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R1
 R2
 R3
-Z51 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd
-Z52 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd
+Z52 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd
+Z53 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd
 l0
 L6
-VQnBCPQQz1E`iE?DFS1nhY0
-!s100 Tb]XT^b4ZZ:?lR>LJT79V3
+VD2[Po>5VoI<SJV:NM2dd<3
+!s100 UH8<2H?Go><UH7;dcdQRn2
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z53 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd|
-Z54 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd|
+Z54 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd|
+Z55 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/counter.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R49
 R50
+R51
 R1
 R2
-DEx4 work 7 counter 0 22 QnBCPQQz1E`iE?DFS1nhY0
+DEx4 work 7 counter 0 22 D2[Po>5VoI<SJV:NM2dd<3
 l14
 L13
-VNZceK:XULa2OToL113QW;3
-!s100 z?;V4n>PFfPnmRGK5@a[X0
+V7XRMz0mfSFH?_^b4H7@b32
+!s100 [lb[X5GRDz7FOl2Cce[Mi2
 R6
-32
+33
 R36
 !i10b 1
 R37
-R53
 R54
+R55
 !i113 1
 R11
 R12
 Ecounter_tb
-Z55 w1544965680
+Z56 w1545093040
 R1
 R2
 R3
-Z56 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd
-Z57 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd
+Z57 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd
+Z58 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd
 l0
 L5
-V>6B[I5We`QTfIPzzE<YWQ1
+V]2d]lHREo>Sccb?[4K1Tn1
 !s100 gVJ6gYj2=ZL2LP?:W;VgX3
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z58 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd|
-Z59 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd|
+Z59 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd|
+Z60 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/counter_tb.vhd|
 !i113 1
 R11
 R12
 Abehave
-R49
 R50
-DEx9 processor 7 counter 0 22 QnBCPQQz1E`iE?DFS1nhY0
+R51
+DEx9 processor 7 counter 0 22 IR4OhhZ1n3W7Ml>E]29QV1
 R1
 R2
-DEx4 work 10 counter_tb 0 22 >6B[I5We`QTfIPzzE<YWQ1
+DEx4 work 10 counter_tb 0 22 ]2d]lHREo>Sccb?[4K1Tn1
 l13
 L8
-V`>W4H1UClCK3]WBfSzOOk0
-!s100 KA2eYVGN;kcQEm14WIJ5P0
+V>DWDbeaEz:6bnUZ]RJIG^3
+!s100 FNaX^KSNbohbhL=OaXb=M0
 R6
-32
+33
 R36
 !i10b 1
 R37
-R58
 R59
+R60
 !i113 1
 R11
 R12
-Ectrl_signals_tb
-Z60 w1545090426
+Ectrl_master
+Z61 w1545223781
+Z62 DPx9 processor 11 p_constants 0 22 nE17HFea55<;iPh7mTmQ92
 R47
-Z61 DPx9 processor 11 p_constants 0 22 =fd6[@Zm?Y4g[mSDiHKka2
 R1
 R2
 R3
-Z62 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd
-Z63 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd
+Z63 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ctrl_master.vhd
+Z64 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ctrl_master.vhd
+l0
+L7
+VlTREaOa39Uz?ecCmTLYMO1
+!s100 5zTFVGKXII`TPl8C6Bda92
+R6
+33
+Z65 !s110 1545224033
+!i10b 1
+Z66 !s108 1545224033.000000
+Z67 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ctrl_master.vhd|
+Z68 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/ctrl_master.vhd|
+!i113 1
+R48
+R12
+Amixed
+Z69 DEx9 processor 7 decoder 0 22 1jD2UG7XB8Ub5zmFgFj4I0
+R50
+R51
+DEx9 processor 7 counter 0 22 D2[Po>5VoI<SJV:NM2dd<3
+R62
+R47
+R1
+R2
+DEx4 work 11 ctrl_master 0 22 lTREaOa39Uz?ecCmTLYMO1
+l34
+L16
+VJRT0QmA=R[a_H^m0l]88c0
+!s100 o8zLDabQ6?:hX>j<A=3V71
+R6
+33
+R65
+!i10b 1
+R66
+R67
+R68
+!i113 1
+R48
+R12
+Ectrl_master_tb
+Z70 w1545224115
+R47
+R62
+R1
+R2
+R3
+Z71 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ctrl_master_tb.vhd
+Z72 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ctrl_master_tb.vhd
+l0
+L8
+V=2007?Y41T0Ejj^<ge4TU0
+!s100 Ff82BKzE0cEjbG6eNg=5N1
+R6
+33
+Z73 !s110 1545224119
+!i10b 1
+Z74 !s108 1545224119.000000
+Z75 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ctrl_master_tb.vhd|
+Z76 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ctrl_master_tb.vhd|
+!i113 1
+R48
+R12
+Abehave
+Z77 DEx9 processor 11 ctrl_master 0 22 lTREaOa39Uz?ecCmTLYMO1
+Z78 DEx9 processor 4 alsu 0 22 9G^Wjkdl@3:_mj[EGF_hm1
+Z79 DEx9 processor 3 ram 0 22 0MHoP8^NaVM0Jk7:9z3R53
+Z80 DEx9 processor 8 reg_file 0 22 Y00MMo<aV[oTa;O3zEQN=3
+Z81 DEx9 processor 10 cw_decoder 0 22 AI6[[`e5UBLT6=J`e4gcR1
+R47
+R62
+R1
+R2
+Z82 DEx4 work 14 ctrl_master_tb 0 22 =2007?Y41T0Ejj^<ge4TU0
+l20
+L11
+VNWNP3Q6:Yn9NH2No5JCB63
+!s100 3c=1I?C3_N5l3nDlmdDKl3
+R6
+33
+R73
+!i10b 1
+R74
+R75
+R76
+!i113 1
+R48
+R12
+Ectrl_signals_tb
+Z83 w1545090426
+R47
+Z84 DPx9 processor 11 p_constants 0 22 =fd6[@Zm?Y4g[mSDiHKka2
+R1
+R2
+R3
+Z85 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd
+Z86 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd
 l0
 L8
 V;^A`[@k`=iZ9IJi]5gcHh0
 !s100 WPU3Bl9S?FUYR8ka@DCmc1
 R6
 33
-Z64 !s110 1545090865
+Z87 !s110 1545090865
 !i10b 1
-Z65 !s108 1545090865.000000
-Z66 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd|
-Z67 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd|
+Z88 !s108 1545090865.000000
+Z89 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd|
+Z90 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/manual_ctrl_tb.vhd|
 !i113 1
-Z68 o-work processor -2008 -explicit
+R11
 R12
 Abehave
-Z69 DEx9 processor 4 alsu 0 22 0G=@IYEoT7^ZDhoJ_gRPM1
-Z70 DEx9 processor 3 ram 0 22 Mlf0=G8:oT``]LERi8[o52
-Z71 DEx9 processor 8 reg_file 0 22 Wil2eaPe4CSM1LlQQQ5gF0
-Z72 DEx9 processor 10 cw_decoder 0 22 OKJ8H]CX[n`HJkZ]BP4FY0
+DEx9 processor 4 alsu 0 22 0G=@IYEoT7^ZDhoJ_gRPM1
+DEx9 processor 3 ram 0 22 Mlf0=G8:oT``]LERi8[o52
+DEx9 processor 8 reg_file 0 22 Wil2eaPe4CSM1LlQQQ5gF0
+DEx9 processor 10 cw_decoder 0 22 OKJ8H]CX[n`HJkZ]BP4FY0
 R47
-R61
+R84
 R1
 R2
 DEx4 work 15 ctrl_signals_tb 0 22 ;^A`[@k`=iZ9IJi]5gcHh0
@@ -469,64 +564,64 @@ VOYhd8AYSQFKN7XJOT1dIL1
 !s100 3F1ZkXGKig0<O61P[F:h71
 R6
 33
-R64
+R87
 !i10b 1
-R65
-R66
-R67
+R88
+R89
+R90
 !i113 1
-R68
+R11
 R12
 Ecw_decoder
-Z73 w1545077372
+Z91 w1545141859
 R1
 R2
 R3
-Z74 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd
-Z75 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd
+Z92 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd
+Z93 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd
 l0
 L6
-VOKJ8H]CX[n`HJkZ]BP4FY0
-!s100 BDFR]]BITO9:6AIWeoMbz1
+VAI6[[`e5UBLT6=J`e4gcR1
+!s100 G55>I7TGF0kl5zXKMHKg12
 R6
 33
 R7
 !i10b 1
 R8
-Z76 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd|
-Z77 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd|
+Z94 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd|
+Z95 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd|
 !i113 1
-R68
+R11
 R12
 Amixed
 R47
-Z78 DEx9 processor 7 decoder 0 22 7aej1MHk>IM5=E]`3UV5F2
+R69
 R1
 R2
-DEx4 work 10 cw_decoder 0 22 OKJ8H]CX[n`HJkZ]BP4FY0
-l23
-L21
-Vn@THb2_W][zYRWc9[znjj1
-!s100 gz_>^`c4RP^Z<J5=>;hb[0
+DEx4 work 10 cw_decoder 0 22 AI6[[`e5UBLT6=J`e4gcR1
+l24
+L22
+VJ:?kmV`4X>B2LM6kKo1lj0
+!s100 LHH5Cgj1cli>VnmBYf6_M2
 R6
 33
 R7
 !i10b 1
 R8
-R76
-R77
+R94
+R95
 !i113 1
-R68
+R11
 R12
 Ecw_decoder_tb
-Z79 w1545078473
+R91
 R47
-R61
+R62
 R1
 R2
 R3
-Z80 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd
-Z81 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd
+Z96 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd
+Z97 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd
 l0
 L6
 VB;oY@g@dkg@`@EcM=n8LD3
@@ -536,51 +631,51 @@ R6
 R7
 !i10b 1
 R8
-Z82 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd|
-Z83 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd|
+Z98 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd|
+Z99 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/cw_decoder_tb.vhd|
 !i113 1
-R68
+R11
 R12
 Abehave
-R72
+R81
 R47
-R61
+R62
 R1
 R2
 DEx4 work 13 cw_decoder_tb 0 22 B;oY@g@dkg@`@EcM=n8LD3
 l15
 L9
-VH8HL`L9AQKozLEE@R`9nS0
-!s100 gmcORz?F1ikPJdTWd=R6Y0
+VYN9=b<aYZcIPRbmPgiPH:0
+!s100 =aTMjDh>OoZimzE;RFhXE3
 R6
 33
 R7
 !i10b 1
 R8
-R82
-R83
+R98
+R99
 !i113 1
-R68
+R11
 R12
 Edecoder
-Z84 w1544624203
+Z100 w1544624203
 R47
 R1
 R2
 R3
-Z85 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
-Z86 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
+Z101 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
+Z102 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd
 l0
 L5
-V7aej1MHk>IM5=E]`3UV5F2
+V1jD2UG7XB8Ub5zmFgFj4I0
 !s100 ?m1?iLT:6oahmG>Ld94a42
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z87 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd|
-Z88 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd|
+Z103 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd|
+Z104 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/decoder.vhd|
 !i113 1
 R11
 R12
@@ -588,149 +683,149 @@ Abehavioral
 R47
 R1
 R2
-DEx4 work 7 decoder 0 22 7aej1MHk>IM5=E]`3UV5F2
+DEx4 work 7 decoder 0 22 1jD2UG7XB8Ub5zmFgFj4I0
 l16
 L15
-V^ifQbFgTH?O;[=EK_h_Uh2
+VfbKYd>?3E?=7o@DJ;d2e71
 !s100 IDDFeGRKno@HVid>F5A?a1
 R6
-32
+33
 R36
 !i10b 1
 R37
-R87
-R88
+R103
+R104
 !i113 1
 R11
 R12
 Edecoder_tb
-Z89 w1544624975
+Z105 w1544624975
 R1
 R2
 R3
-Z90 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
-Z91 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
+Z106 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
+Z107 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd
 l0
 L5
-V_FHCnQ?:ZbO6@1AiSVSc72
+Vce;bPSfAYEd_bA443F8G:0
 !s100 4mm<Y716XF9M?Q8MDCK@e1
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z92 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd|
-Z93 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd|
+Z108 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd|
+Z109 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/decoder_tb.vhd|
 !i113 1
 R11
 R12
 Abehave
 R47
-R78
+R69
 R1
 R2
-DEx4 work 10 decoder_tb 0 22 _FHCnQ?:ZbO6@1AiSVSc72
+DEx4 work 10 decoder_tb 0 22 ce;bPSfAYEd_bA443F8G:0
 l13
 L8
-V^0K]RTfiGPK=6CkoOFh?N0
+V`d@A1oSL`?HZ;ifXCFdGU0
 !s100 dVd@YXeaDSN2]Vck>99Y@1
 R6
-32
+33
 R36
 !i10b 1
 R37
-R92
-R93
+R108
+R109
 !i113 1
 R11
 R12
 Efull_adder
-Z94 w1543014437
+Z110 w1543014437
 R1
 R2
 R3
-Z95 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/full_adder.vhd
-Z96 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/full_adder.vhd
+Z111 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/full_adder.vhd
+Z112 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/full_adder.vhd
 l0
 L4
-V9d:J?0=:ShS9fK0O@]dDO1
+V=>Ac^JGCm`T2TlQHhNOk;2
 !s100 >RzmkRPY1g<zE<z8z:_902
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z97 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/full_adder.vhd|
-Z98 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/full_adder.vhd|
+Z113 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/full_adder.vhd|
+Z114 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/full_adder.vhd|
 !i113 1
 R11
 R12
 Adataflow
 R1
 R2
-DEx4 work 10 full_adder 0 22 9d:J?0=:ShS9fK0O@]dDO1
+DEx4 work 10 full_adder 0 22 =>Ac^JGCm`T2TlQHhNOk;2
 l12
 L11
-VGd4H_kGi_[L26Q7Pn9BlK1
+VA_lZ2>KRbM^joM_cMkNkG0
 !s100 6DMR]g:F[Yl4`0WG6YS^I0
 R6
-32
+33
 R7
 !i10b 1
 R8
-R97
-R98
+R113
+R114
 !i113 1
 R11
 R12
 Elogic_unit
-Z99 w1543017378
+Z115 w1543017378
 R1
 R2
 R3
-Z100 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/logic_unit.vhd
-Z101 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/logic_unit.vhd
+Z116 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/logic_unit.vhd
+Z117 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/logic_unit.vhd
 l0
 L4
-VLKnR]ZVEU69PFa>U2JgZ80
+VgnGF5kD;DP7DH?eSF?8=U1
 !s100 kNLgO<?Y?chUjCF^:aNg=3
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z102 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/logic_unit.vhd|
-Z103 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/logic_unit.vhd|
+Z118 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/logic_unit.vhd|
+Z119 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/logic_unit.vhd|
 !i113 1
 R11
 R12
 Adataflow
 R1
 R2
-DEx4 work 10 logic_unit 0 22 LKnR]ZVEU69PFa>U2JgZ80
+DEx4 work 10 logic_unit 0 22 gnGF5kD;DP7DH?eSF?8=U1
 l15
 L14
-VAc?o><86H[2cZOb`b0TRN2
+Vk3Mf4W?IlCFmSMNi6U@A20
 !s100 faz7Y@:6:ILWXIAP;IgGg1
 R6
-32
+33
 R7
 !i10b 1
 R8
-R102
-R103
+R118
+R119
 !i113 1
 R11
 R12
 Emanual_ctrl_tb
-Z104 w1545091323
+Z120 w1545166393
 R47
-R61
+R62
 R1
 R2
 R3
-R62
-R63
+R85
+R86
 l0
 L8
 V5Q1NMaGR=UCh9bGVJh;^O0
@@ -740,47 +835,47 @@ R6
 R7
 !i10b 1
 R8
-R66
-R67
+R89
+R90
 !i113 1
-R68
+R11
 R12
 Abehave
-R69
-R70
-R71
-R72
+R78
+R79
+R80
+R81
 R47
-R61
+R62
 R1
 R2
 DEx4 work 14 manual_ctrl_tb 0 22 5Q1NMaGR=UCh9bGVJh;^O0
 l20
 L11
-VCjibd8D8]fCAVdU[QMiO>2
-!s100 ?XKofUb?I1_4V19oNR1e@3
+VWAljl1O>mz2dnKL9DU`>R1
+!s100 XT?@CddA^[jl>Nk:?<FR41
 R6
 33
 R7
 !i10b 1
 R8
-R66
-R67
+R89
+R90
 !i113 1
-R68
+R11
 R12
 Pp_constants
 R47
 R1
 R2
-w1545090036
+w1545165935
 R3
 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/constants.vhd
 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/constants.vhd
 l0
 L5
-V=fd6[@Zm?Y4g[mSDiHKka2
-!s100 4TI1KX@ZObDSdO>T8G0WV2
+VnE17HFea55<;iPh7mTmQ92
+!s100 h]eLL2j4e`BL[0HN1NXk?2
 R6
 33
 R7
@@ -789,27 +884,27 @@ R8
 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/constants.vhd|
 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/constants.vhd|
 !i113 1
-R68
+R11
 R12
 Eram
-Z105 w1545091183
+Z121 w1545169532
 R47
 R1
 R2
 R3
-Z106 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd
-Z107 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd
+Z122 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd
+Z123 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd
 l0
 L6
-VMlf0=G8:oT``]LERi8[o52
+V0MHoP8^NaVM0Jk7:9z3R53
 !s100 8VhCQNI1QKjUV6G0BAFYm0
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z108 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd|
-Z109 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd|
+Z124 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd|
+Z125 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/ram.vhd|
 !i113 1
 R11
 R12
@@ -817,81 +912,81 @@ Amixed_ram
 R47
 R1
 R2
-DEx4 work 3 ram 0 22 Mlf0=G8:oT``]LERi8[o52
-l25
+DEx4 work 3 ram 0 22 0MHoP8^NaVM0Jk7:9z3R53
+l26
 L18
-VHL>bLg:ZJd<m0W??IK5I31
-!s100 gc;ife9>EF;[eN5Z0B<mk2
+VB3lFm2:R4dzAnFE51Vci?1
+!s100 6>2lW>z^]b@f_EOG@RMU`3
 R6
-32
+33
 R7
 !i10b 1
 R8
-R108
-R109
+R124
+R125
 !i113 1
 R11
 R12
 Eram_tb
-Z110 w1545060558
+Z126 w1545060558
 R1
 R2
 R3
-Z111 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd
-Z112 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd
+Z127 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd
+Z128 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd
 l0
 L5
-V;d;l=Dkc[SfJD_cY0fYGI2
+V?LI46=^ojAGLkB>Fd_LVX3
 !s100 7gBEXcOiIjBkfCQ60lR<a3
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z113 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd|
-Z114 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd|
+Z129 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd|
+Z130 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_tb.vhd|
 !i113 1
 R11
 R12
 Atb
 R47
-R70
+R79
 R1
 R2
-DEx4 work 6 ram_tb 0 22 ;d;l=Dkc[SfJD_cY0fYGI2
+DEx4 work 6 ram_tb 0 22 ?LI46=^ojAGLkB>Fd_LVX3
 l14
 L8
-VZjc6<34jWHYidA9VUkOKT3
+V`]MllFnbPaI:XUcO;2J7X3
 !s100 lbZj6H7zhCCF[VfhEDG2f2
 R6
-32
+33
 R7
 !i10b 1
 R8
-R113
-R114
+R129
+R130
 !i113 1
 R11
 R12
 Eram_testbench
-Z115 w1544909190
+Z131 w1544909190
 R47
 R1
 R2
 R3
-Z116 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd
-Z117 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd
+Z132 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd
+Z133 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd
 l0
 L7
-VfhRc6B[ZN<HWH;FE81>Dd1
+V:LgSA[k?eB0UboHC7O_1i0
 !s100 P6iE:2CbTFTI`4UPj>E;X0
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z118 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd|
-Z119 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd|
+Z134 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd|
+Z135 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/ram_testbench.vhd|
 !i113 1
 R11
 R12
@@ -899,159 +994,159 @@ Amixed_testbench
 R47
 R1
 R2
-DEx4 work 13 ram_testbench 0 22 fhRc6B[ZN<HWH;FE81>Dd1
+DEx4 work 13 ram_testbench 0 22 :LgSA[k?eB0UboHC7O_1i0
 l27
 L10
-V3O`Y3<zzD4jNEW0YHM<]H0
+V^eeQ@hH8Pl<:2]WLfVEBZ3
 !s100 odO:aF3PeJD`UgFO8OEoG2
 R6
-32
+33
 R36
 !i10b 1
 R37
-R118
-R119
+R134
+R135
 !i113 1
 R11
 R12
 Ereg
-Z120 w1544807636
+Z136 w1545169112
 R1
 R2
 R3
-Z121 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd
-Z122 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd
+Z137 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd
+Z138 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd
 l0
 L4
-VTfYE1LE2VkiB=?6gihUK20
+V?WoHPFk;W]Wbo@oZS^M>>3
 !s100 UehzZbM]^U:4j`3KJ85V=0
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z123 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd|
-Z124 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd|
+Z139 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd|
+Z140 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg.vhd|
 !i113 1
 R11
 R12
 Abehavorial
 R1
 R2
-DEx4 work 3 reg 0 22 TfYE1LE2VkiB=?6gihUK20
+DEx4 work 3 reg 0 22 ?WoHPFk;W]Wbo@oZS^M>>3
 l15
 L14
-VlC:f7N6jOTcYj;1bI>`:^1
-!s100 kWAgTIWRUi3=G11A_RF<Y3
+VXC2Y>EUP6KYACPnHhBKdP3
+!s100 N0jYXXgbg?OMa<_47b<Ng2
 R6
-32
+33
 R36
 !i10b 1
 R37
-R123
-R124
+R139
+R140
 !i113 1
 R11
 R12
 Ereg_file
-Z125 w1545087824
+Z141 w1545087824
 R1
 R2
 R3
-Z126 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd
-Z127 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd
+Z142 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd
+Z143 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd
 l0
 L5
-VWil2eaPe4CSM1LlQQQ5gF0
+VY00MMo<aV[oTa;O3zEQN=3
 !s100 P3Qo[l1U5VG_z2N9`WT]d1
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z128 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd|
-Z129 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd|
+Z144 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd|
+Z145 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/reg_file.vhd|
 !i113 1
 R11
 R12
 Astructural
 R46
-DEx9 processor 11 bi_reg_bare 0 22 29?Iz>Z@m4]90l9XiATNU1
+DEx9 processor 11 bi_reg_bare 0 22 GG9572;o_]`3aYM@PO<oW0
 R1
 R2
-DEx4 work 8 reg_file 0 22 Wil2eaPe4CSM1LlQQQ5gF0
+DEx4 work 8 reg_file 0 22 Y00MMo<aV[oTa;O3zEQN=3
 l23
 L20
-V<nT=]iXkKNjegeGed_b`S3
+V14dAn8bT=2LC2B7k]g=QQ1
 !s100 >^J:U>?T4eQ^l8cQE3A9Q1
 R6
-32
+33
 R36
 !i10b 1
 R37
-R128
-R129
+R144
+R145
 !i113 1
 R11
 R12
 Ereg_file_tb
-Z130 w1545087115
+Z146 w1545087115
 R1
 R2
 R3
-Z131 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
-Z132 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
+Z147 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
+Z148 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd
 l0
 L5
-Vhi`]3b`C@e0;_NjHhXUk?3
+V`j0dU@f_2B0JnLR:4UTPA3
 !s100 61;@ZCj;5Q<VR=5nSV2?j2
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z133 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
-Z134 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
+Z149 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
+Z150 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_file_tb.vhd|
 !i113 1
 R11
 R12
 Atb
-R71
+R80
 R1
 R2
-DEx4 work 11 reg_file_tb 0 22 hi`]3b`C@e0;_NjHhXUk?3
+DEx4 work 11 reg_file_tb 0 22 `j0dU@f_2B0JnLR:4UTPA3
 l15
 L8
-V2>lCSDB5i0O<o[2>l0ADR3
+V2A3e<6M_GHcCEY]VbQRa[2
 !s100 ElEbJ>eYdOYPaPCKgXBf?0
 R6
-32
+33
 R36
 !i10b 1
 R37
-R133
-R134
+R149
+R150
 !i113 1
 R11
 R12
 Ereg_tb
-Z135 w1544623814
+Z151 w1544623814
 R1
 R2
 R3
-Z136 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
-Z137 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
+Z152 8/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
+Z153 F/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd
 l0
 L5
-Va4BnNGmhCER1BGQz0C];<3
+V5?i?Z@<Zid4`f=B3CbAg>1
 !s100 GaY5W<o6`iiGo[kBBOjH93
 R6
-32
+33
 R36
 !i10b 1
 R37
-Z138 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd|
-Z139 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd|
+Z154 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd|
+Z155 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/testbenches/reg_tb.vhd|
 !i113 1
 R11
 R12
@@ -1059,57 +1154,57 @@ Atb
 R40
 R1
 R2
-DEx4 work 6 reg_tb 0 22 a4BnNGmhCER1BGQz0C];<3
+DEx4 work 6 reg_tb 0 22 5?i?Z@<Zid4`f=B3CbAg>1
 l14
 L8
-VjG=2YQeZlaR?`15HVBV_H3
+V7GGWnOS3N]N?U:2h>hd;g1
 !s100 G364D:K]R]K@Vn7^la^fk1
 R6
-32
+33
 R36
 !i10b 1
 R37
-R138
-R139
+R154
+R155
 !i113 1
 R11
 R12
 Eshift_unit
-Z140 w1545063300
+Z156 w1545142164
 R1
 R2
 R3
-Z141 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/shift_unit.vhd
-Z142 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/shift_unit.vhd
+Z157 8/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/shift_unit.vhd
+Z158 F/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/shift_unit.vhd
 l0
 L4
-VXB[4R0LO^E?iX`D:dCIjY1
+VGK6[`K01_7T=TVfN?Q`:H2
 !s100 l0Q<c@4KDO2CFj9^V;bOc1
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z143 !s90 -reportprogress|300|-work|processor|-2002|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/shift_unit.vhd|
-Z144 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/shift_unit.vhd|
+Z159 !s90 -reportprogress|300|-work|processor|-2008|-explicit|-stats=none|/mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/shift_unit.vhd|
+Z160 !s107 /mnt/01D35D8F61D34AA0/Projects/arch/project/code/alsu/shift_unit.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R1
 R2
-DEx4 work 10 shift_unit 0 22 XB[4R0LO^E?iX`D:dCIjY1
+DEx4 work 10 shift_unit 0 22 GK6[`K01_7T=TVfN?Q`:H2
 l16
 L15
-V]kIX`QVkFV5U2iSFHc9V12
-!s100 @9O6bPH]_CNnRK?;OWj0[2
+V?O9Z9SiY33[;EK712n=3M0
+!s100 SXNLjLQ7Y5=167bW:Afj>3
 R6
-32
+33
 R7
 !i10b 1
 R8
-R143
-R144
+R159
+R160
 !i113 1
 R11
 R12

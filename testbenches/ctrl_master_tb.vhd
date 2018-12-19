@@ -102,6 +102,8 @@ begin
             assert (control_word = (TMP1out or F_Ap1 or PCin)) report "F&D: T1 is wrong!";
             wait for period;
             assert (control_word = (MDRout or F_A or IRin)) report "F&D: T2 is wrong!";
+            wait for period;
+            assert (IR_data_out = X"1000") report "IR data is wrong!";
         end process;
 
     process is
