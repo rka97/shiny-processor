@@ -10,7 +10,7 @@ architecture tb of alsu_tb is
     signal B : std_logic_vector(15 downto 0) := (others => 'Z');
     signal Cin : std_logic := 'Z';
     signal F : std_logic_vector(15 downto 0) := (others => 'Z');
-    signal Cout : std_logic := 'Z';
+    signal Cout, Zero, Negative, Parity, Overflow : std_logic := 'Z';
 
     component alsu is
         generic (N : natural);
@@ -20,7 +20,7 @@ architecture tb of alsu_tb is
             B : in std_logic_vector(N-1 downto 0);
             Cin : in std_logic;
             F : out std_logic_vector(N-1 downto 0);
-            Cout : out std_logic
+            Cout, Zero, Negative, Parity, Overflow : out std_logic
         );
     end component alsu;
 
@@ -33,7 +33,11 @@ architecture tb of alsu_tb is
                 B => B,
                 Cin => Cin,
                 F => F,
-                Cout => Cout
+                Cout => Cout,
+                Zero => Zero,
+                Negative => Negative,
+                Parity => Parity,
+                Overflow => Overflow
             );
 
         process is

@@ -9,6 +9,7 @@ entity cw_decoder is
         src_sel         : out std_logic_vector(13 downto 0);
         dst_sel         : out std_logic_vector(13 downto 0);
         alsu_sel        : out std_logic_vector(3 downto 0);
+        cin_force          : out std_logic;
         br_offset_only  : out std_logic;
         mar_force_in    : out std_logic;
         mem_rd, mem_wr  : out std_logic;
@@ -38,6 +39,7 @@ begin
     dst_sel <= control_word(26 downto 13);
     dst_en <= or control_word(26 downto 13);
     alsu_sel <= control_word(12 downto 9);
+    cin_force <= control_word(8);
     mem_rd <= control_word(6);
     mem_wr <= control_word(5);
     halt <= control_word(4);

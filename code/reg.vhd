@@ -14,7 +14,7 @@ end entity reg;
 architecture behavorial of reg is
     begin
         process (clk, enable) is
-        variable feedback : std_logic_vector(N-1 downto 0) := (others => 'Z');
+        variable feedback : std_logic_vector(N-1 downto 0) := (others => '0');
         begin
             if (enable = '1') then
                 if rising_edge(clk) then

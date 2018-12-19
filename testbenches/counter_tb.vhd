@@ -13,7 +13,7 @@ architecture behave of counter_tb is
 begin
     counter_inst : entity processor.counter
         generic map (
-            n => 4
+            max_nbits => 4
         )
         port map (
             clk => clk,

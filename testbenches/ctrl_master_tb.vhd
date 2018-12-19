@@ -5,10 +5,10 @@ use processor.p_constants.all;
 
 -- Connects the RAM, Register File, ALSU together. Decodes control signals given by user input.
 -- Assume that B of ALU is TMP1
-entity manual_ctrl_tb is
-end manual_ctrl_tb;
+entity ctrl_master_tb is
+end ctrl_master_tb;
 
-architecture behave of manual_ctrl_tb is
+architecture behave of ctrl_master_tb is
     signal control_word : std_logic_vector(31 downto 0) := (others => 'Z');
     signal src_sel, dst_sel : std_logic_vector(13 downto 0) := (others => 'Z');
     signal alsu_sel : std_logic_vector(3 downto 0) := (others => 'Z');
@@ -85,34 +85,23 @@ begin
             Parity => flags_data_next(3),
             Overflow => flags_data_next(4)
         );
+
+    ctrl_master_inst : entity processor.ctrl_master
+        port map (
+            clk => clk,
+            MDR_data => mdr_data_out,
+            IR_data => IR_data_out,
+            control_word => control_word
+        );
+    
     process is
         begin
-            data_1 <= x"CC00";
-            control_word <= MDRin or F_HI;
             wait for period;
-            -- write "AA00" to R0, R1, R2, TMP1, MAR
-            -- write to memory too
-            data_1 <= x"AA00";
-            control_word <= R0in or R1in or R2in or TMP1in or MARin or WT or F_HI;
+            assert (control_word = (PCout or F_A or MARin or TMP1in or RD)) report "F&D: T0 is wrong!";
             wait for period;
-            -- query data in R1
-            -- read from memory to MDR
-            data_1 <= (others => 'Z');
-            control_word <= R1out or F_HI or RD;
+            assert (control_word = (TMP1out or F_Ap1 or PCin)) report "F&D: T1 is wrong!";
             wait for period;
-            assert (data_2 = x"AA00") report "Did not properly out to R1!";
-            assert (mdr_data_out = x"CC00") report "Memory did not read/write properly!";
-            -- now write 00BB to R3
-            control_word <= R3in or F_HI;
-            data_1 <= x"00BB";
-            wait for period;
-            data_1 <= (others => 'Z');
-            control_word <= R3out or F_ApB or R1in;
-            wait for period;
-            control_word <= R1out or F_HI;
-            wait for period;
-            assert (data_2 = x"AABB") report "Did not properly add data!";
-            control_word <= F_HI;
+            assert (control_word = (MDRout or F_A or IRin)) report "F&D: T2 is wrong!";
         end process;
 
     process is
