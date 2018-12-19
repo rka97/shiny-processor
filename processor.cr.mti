@@ -41,7 +41,43 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 2
 -- Compiling entity decoder
 -- Compiling architecture behavioral of decoder
 
-} {} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd {1 {vcom -work processor -2008 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd
+} {} {}} /home/abdo/Desktop/shiny-processor/code/branches.vhd {0 {vcom -work work -2008 -explicit -stats=none /home/abdo/Desktop/shiny-processor/code/branches.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity branch
+-- Compiling architecture behavorial of branch
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(25): (vcom-1294) Declaration with designator "branch_state" already exists in this region.
+** =====> Prior declaration of "branch_state" is at /home/abdo/Desktop/shiny-processor/code/branches.vhd(22).
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(45): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(47): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(49): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(51): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(53): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(55): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(57): (vcom-1136) Unknown identifier "excute_state".
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(62): (vcom-1136) Unknown identifier "excute_state".
+** Error (suppressible): /home/abdo/Desktop/shiny-processor/code/branches.vhd(62): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(64): (vcom-1136) Unknown identifier "PCout".
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(64): (vcom-1136) Unknown identifier "F_A".
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(64): ** Error: (vcom-1590) Bad expression in left operand of infix expression 'or'.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(64): (vcom-1136) Unknown identifier "TMP1in".
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(64): Type error resolving infix expression "or" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(65): (vcom-1136) Unknown identifier "excute_state".
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(67): (vcom-1136) Unknown identifier "IRout".
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(67): (vcom-1136) Unknown identifier "F_ApB".
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(67): ** Error: (vcom-1590) Bad expression in left operand of infix expression 'or'.
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(67): (vcom-1136) Unknown identifier "PCin".
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(67): Type error resolving infix expression "or" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+doVOpenFlatFile(): INTERNAL ERROR: page load failed for file /home/abdo/Desktop/shiny-processor/processor/counter/_primary.dat (209:209 1:1 16292 0 0 429 0x0:0x5c183903)
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(76): (vcom-1915) Cannot load design unit "processor.counter".
+** Error: (vcom-7) Failed to open library file "/home/abdo/Desktop/shiny-processor/processor/counter/_primary.dat" in read mode.
+No such file or directory. (errno = ENOENT)
+** Error: /home/abdo/Desktop/shiny-processor/code/branches.vhd(76): VHDL Compiler exiting
+
+} {9.0 10.0 11.0 19.0 20.0 31.0 32.0 34.0 35.0 36.0} {}} /mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd {1 {vcom -work processor -2008 -explicit -stats=none /mnt/01D35D8F61D34AA0/Projects/arch/project/code/cw_decoder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.6d Compiler 2018.02 Feb 24 2018
 -- Loading package STANDARD
 -- Loading package TEXTIO
