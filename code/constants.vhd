@@ -58,7 +58,7 @@ constant F_Zero       : std_logic_vector(31 downto 0) := (31 downto 13 => '0') &
 constant F_AandB      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0100" & (8 downto 0 => '0');
 constant F_AorB       : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0101" & (8 downto 0 => '0');
 constant F_AxorB      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0110" & (8 downto 0 => '0');
-constant F_AnotB      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0111" & (8 downto 0 => '0');
+constant F_notA       : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0111" & (8 downto 0 => '0');
 
 constant F_LSR        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "1000" & (8 downto 0 => '0');
 constant F_ROR        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "1001" & (8 downto 0 => '0');

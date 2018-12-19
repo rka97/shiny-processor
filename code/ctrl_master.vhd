@@ -78,12 +78,14 @@ begin
     variable sub_addr_mode  : std_logic_vector(1 downto 0);
     variable mem_out		: boolean;
     variable Ri_out_preinc, Rp1	: std_logic_vector(3 downto 0);
+    variable Dst_in         : std_logic_vector(31 downto 0);
     begin
         fetch_cycle := addr_mode(2) & count(1 downto 0);
         Riin := (31 downto 21 => '0') & used_reg_decoded & (12 downto 0 => '0'); -- destination
         Ri_out_preinc := '0' & used_reg; -- 4-bt indicator of used registers
         Rp1 := std_logic_vector(to_unsigned(to_integer(unsigned( Ri_out_preinc )) + 1, 4));
         Riout := Rp1 & (27 downto 0 => '0'); -- source
+        Dst_in := Rp1 when addr_mode = "100" else (MDRin or WT); 
         sub_addr_mode := addr_mode(1 downto 0); 
         if current_state = "00" then  -- Fetch Code Line
             if count = "000" then        -- PCout, F=A, MARin, TMP1in, Rd
@@ -171,12 +173,32 @@ begin
             -- Various Execution Phases
             if instruction_category = two_op then
             elsif instruction_category = one_op then
-                if instruction_one_op = "0000" then
-                    if (count = "000") then
-                        control_word <= TMP1out or F_Ap1 or Riin;
-                        counter_rst <= '1';
-                        next_state <= "00";
+                if (count = "000") then  
+                    if instruction_one_op = "0000" then -- INC
+                        control_word <= TMP1out or F_Ap1 or Dst_in;
+                    elsif instruction_one_op = "0001" then -- DEC
+                        control_word <= TMP1out or F_Am1 or Dist_in;
+                    elsif instruction_one_op = "0010" then -- CLR
+                        control_word <= TMP1out or F_Zero or Dist_in;
+                    elsif instruction_one_op = "0011" then -- INV
+                        control_word <= TMP1out or F_notA or Dist_in;
+                    elsif instruction_one_op = "0100" then -- LSR
+                        control_word <= TMP1out or F_LSR or Dist_in;
+                    elsif instruction_one_op = "0101" then -- ROR
+                        control_word <= TMP1out or F_ROR or Dist_in;
+                    elsif instruction_one_op = "0110" then -- RRC
+                        control_word <= TMP1out or F_RRC or Dist_in;
+                    elsif instruction_one_op = "0111" then -- ASR
+                        control_word <= TMP1out or F_ASR or Dist_in;
+                    elsif instruction_one_op = "1000" then -- LSL
+                        control_word <= TMP1out or F_LSL or Dist_in;
+                    elsif instruction_one_op = "1001" then -- ROL
+                        control_word <= TMP1out or F_ROL or Dist_in;
+                    elsif instruction_one_op = "1010" then -- RLC
+                        control_word <= TMP1out or F_RLC or Dist_in;
                     end if;
+                    counter_rst <= '1';
+                    next_state <= "00";
                 end if;
             elsif instruction_category = branch then
             elsif instruction_category = misc then
