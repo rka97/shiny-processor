@@ -44,7 +44,7 @@ end entity reg_l;
 
 architecture behavorial of reg_l is
     begin
-        process (clk, enable) is
+        process (enable, clk, data_in) is
         variable feedback : std_logic_vector(N-1 downto 0) := (others => '0');
         begin
             if (enable = '1') then
