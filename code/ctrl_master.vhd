@@ -79,13 +79,19 @@ begin
     variable mem_out		: boolean;
     variable Ri_out_preinc, Rp1	: std_logic_vector(3 downto 0);
     begin
+        fetch_cycle := addr_mode(2) & count(1 downto 0);
+        Riin := (31 downto 21 => '0') & used_reg_decoded & (12 downto 0 => '0'); -- destination
+        Ri_out_preinc := '0' & used_reg; -- 4-bt indicator of used registers
+        Rp1 := std_logic_vector(to_unsigned(to_integer(unsigned( Ri_out_preinc )) + 1, 4));
+        Riout := Rp1 & (27 downto 0 => '0'); -- source
+        sub_addr_mode := addr_mode(1 downto 0); 
         if current_state = "00" then  -- Fetch Code Line
             if count = "000" then        -- PCout, F=A, MARin, TMP1in, Rd
                 counter_rst <= '0';
-                control_word <= PCout or F_A or MARin or TMP1in or RD;
+                control_word <= PCout or F_A or MARin or TMP1in;
                 next_state <= "00";
             elsif count = "001" then     -- F=A+1, PCin, WMFC
-                control_word <= TMP1out or F_Ap1 or PCin;
+                control_word <= TMP1out or F_Ap1 or PCin or RD;
                 next_state <= "00";
             elsif count = "010" then     -- MDRout, F=A, IRin
                 control_word <= MDRout or F_A or IRin;
@@ -93,19 +99,12 @@ begin
                 next_state <= "11" when ((MDR_data(15 downto 14) = "00") or (MDR_data(15 downto 13) = "010")) else 
                               "01" when (MDR_data(15 downto 12) = "0110") else
                               "10";
-                next_state <= "00";
                 counter_rst <= '1';
             else -- Error state: we should never be here!
                 next_state <= "00";
                 counter_rst <= '1';
             end if;
         elsif current_state = "01" or current_state = "10" then -- Fetch Op
-            fetch_cycle := addr_mode(2) & count(1 downto 0);
-            Riin := (31 downto 21 => '0') & used_reg_decoded & (12 downto 0 => '0'); -- destination
-            Ri_out_preinc := '0' & used_reg; -- 4-bt indicator of used registers
-            Rp1 := std_logic_vector(to_unsigned(to_integer(unsigned( Ri_out_preinc )) + 1, 4));
-            Riout := Rp1 & (27 downto 0 => '0'); -- source
-            sub_addr_mode := addr_mode(1 downto 0); 
             if count = "000" then
                 counter_rst <= '0';
             end if;
@@ -142,7 +141,7 @@ begin
                     mem_out := true;       
                 end if;
             
-            elsif sub_addr_mode = "11"then -- indexed
+            elsif sub_addr_mode = "11" then -- indexed
                 if  fetch_cycle = "000" or fetch_cycle = "100" then 
                     control_word <= PCout or MARin1 or RD or F_Ap1 or PCin or TMP1in;
                 elsif  fetch_cycle = "001" or fetch_cycle = "101" then 
@@ -172,6 +171,13 @@ begin
             -- Various Execution Phases
             if instruction_category = two_op then
             elsif instruction_category = one_op then
+                if instruction_one_op = "0000" then
+                    if (count = "000") then
+                        control_word <= TMP1out or F_Ap1 or Riin;
+                        counter_rst <= '1';
+                        next_state <= "00";
+                    end if;
+                end if;
             elsif instruction_category = branch then
             elsif instruction_category = misc then
                 if (instruction_misc= "0100") then -- JMP
@@ -235,7 +241,7 @@ begin
     
     sync_ps : process(clk)
     begin
-        if rising_edge(clk) then
+        if falling_edge(clk) then
             current_state <= next_state;
         end if;
     end process;
