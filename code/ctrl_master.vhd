@@ -176,11 +176,29 @@ begin
             end if;
             -- Various Execution Phases
             if instruction_category = two_op then
-                if instruction_two_op = "1111" then
-                    if (count = "000") then
-                        control_word <= TMP2out or F_A or Riin;
-                        counter_rst <= '1';
-                        next_state <= "00";
+                if (count = "000") then
+                    if instruction_two_op = "1111" then
+                        if (count = "000") then
+                            control_word <= TMP2out or F_A or Riin;
+                            counter_rst <= '1';
+                            next_state <= "00";
+                        end if;
+                    elsif (instruction_two_op = x"E") then
+                        control_word <= TMP2out or F_ApB or Dst_in;
+                    elsif (instruction_two_op = x"D") then
+                        control_word <= TMP2out or F_ApBp1 or Dst_in;
+                    elsif (instruction_two_op = x"C") then
+                        control_word <= TMP2out or F_AmB or Dst_in;
+                    elsif (instruction_two_op = x"B") then
+                        control_word <= TMP2out or F_AmBm1 or Dst_in;
+                    elsif (instruction_two_op = x"A") then
+                        control_word <= TMP2out or F_AandB or Dst_in;
+                    elsif (instruction_two_op = x"9") then
+                        control_word <= TMP2out or F_AorB or Dst_in;
+                    elsif (instruction_two_op = x"8") then
+                        control_word <= TMP2out or F_ApB or Dst_in;
+                    elsif (instruction_two_op = x"7") then
+                        control_word <= TMP2out or F_AmB;
                     end if;
                 end if;
             elsif instruction_category = one_op then
