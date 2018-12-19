@@ -39,21 +39,29 @@ architecture behave of fetch_op_tb is
 
             
             -- Test Case 1 direct reg
-            --Ri <= "000";
-            --add_mode <= "000";
 			IR_data_out <= "1111000000000000";
 			count_SM <="00";
             wait for period;
             assert( out_control_word = (R0out or F_A or TMP2in)) report  "TC:1 error dst, R0, direct register &count =00 is wrong";
             wait for period;
 
-			 -- Test Case 2 indirect auto inc
-            --Ri <= "001";
+            -- Test Case 2 indirect auto inc
+             --Ri <= "001";
             --add_mode <= "101";
             IR_data_out <= "1111101001000000";
+			count_SM <="00";
+            wait for period;
+            assert( out_control_word = (R1out or MARin1 or RD or F_Ap1 or R1in)) report  "TC:20 error: indirect auto inc &count =01 is wrong";
+            wait for period;
+  
 			count_SM <="01";
             wait for period;
-            assert( out_control_word = (MDRout or F_HI or MARin1 or Rd)) report  "TC:2 error: indirect auto inc &count =01 is wrong";
+            assert( out_control_word = (MDRout or F_HI or MARin1 or Rd)) report  "TC:21 error: indirect auto inc &count =01 is wrong";
+            wait for period;
+
+			count_SM <="10";
+            wait for period;
+            assert( out_control_word =  (MDRout or F_A or TMP2in)) report  "TC:22 error: indirect auto inc &count =01 is wrong";
             wait for period;
            
 			-- Test Case 3 direct auto dec      
@@ -62,16 +70,24 @@ architecture behave of fetch_op_tb is
             IR_data_out <= "1111010010000000";
 			count_SM <="00";
             wait for period;
-            assert( out_control_word = (R2out or F_Am1 or MARin or Rd or R2in)) report  "TC:3 error direct auto dec &count =00 is wrong";
+            assert( out_control_word = (R2out or F_Am1 or MARin or Rd or R2in)) report  "TC:30 error direct auto dec &count =00 is wrong";
             wait for period;
-			            
+           
+			count_SM <="01";
+            wait for period;
+            assert( out_control_word = (MDRout or F_A or TMP2in)) report  "TC:31 error direct auto dec &count =00 is wrong";
+            wait for period;
+
 			-- Test Case 4 auto inc     
-            --Ri <= "111";
-            --add_mode <= "001";
             IR_data_out <= "1111001111000000";
 			count_SM <="00";
             wait for period;
-            assert( out_control_word = (R7out or MARin1 or RD or F_Ap1 or R7in)) report  "TC:4 error auto inc &count =00 is wrong";
+            assert( out_control_word = (R7out or MARin1 or RD or F_Ap1 or R7in)) report  "TC:40 error auto inc &count =00 is wrong";
+            wait for period;
+
+			count_SM <="01";
+            wait for period;
+            assert( out_control_word = (MDRout or F_A or TMP2in)) report  "TC:41 error auto inc &count =00 is wrong";
             wait for period;
 
             -- Test Case 5 indirect reg           
@@ -80,35 +96,74 @@ architecture behave of fetch_op_tb is
             IR_data_out <= "1111100100000000";
 			count_SM <="00";
             wait for period;
-            assert( out_control_word = (R4out or MARin1 or Rd or F_HI)) report  "TC:5 error  indirect register &count =00 is wrong";
+            assert( out_control_word = (R4out or MARin1 or Rd or F_HI)) report  "TC:50 error  indirect register &count =00 is wrong";
+            wait for period;
+
+			count_SM <="01";
+            wait for period;
+            assert( out_control_word = (MDRout or F_A or TMP2in)) report  "TC:51 error  indirect register &count =00 is wrong";
             wait for period;
 
              -- Test Case 6 dir indx     
-             --Ri <= "101";
-             --add_mode <= "011";
              IR_data_out <= "1111011101000000";
+             count_SM <="00";
+             wait for period;
+             assert( out_control_word = (PCout or MARin1 or RD or F_Ap1 or PCin)) report  "TC:60 error dir indx &count =01 is wrong";
+             wait for period;
+
              count_SM <="01";
              wait for period;
-             assert( out_control_word = (MDRout or F_ApB or MARin or Rd)) report  "TC:6 error dir indx &count =01 is wrong";
+             assert( out_control_word = (MDRout or F_ApB or MARin or Rd)) report  "TC:61 error dir indx &count =01 is wrong";
+             wait for period;
+
+             count_SM <="10";
+             wait for period;
+             assert( out_control_word = (MDRout or F_A or TMP2in)) report  "TC:62 error dir indx &count =01 is wrong";
              wait for period;
 
 			 -- Test Case 7 indirect indexed           
              --Ri <= "101";
              --add_mode <= "111";
              IR_data_out <= "1111111101000000";
+             count_SM <="00";
+             wait for period;
+             assert( out_control_word = (PCout or MARin1 or RD or F_Ap1 or PCin)) report  "TC:70 error  indirect indexed &count =01 is wrong";
+             wait for period;
+             
              count_SM <="01";
              wait for period;
-             assert( out_control_word = (MDRout or F_ApB or MARin or Rd)) report  "TC:7 error  indirect indexed &count =01 is wrong";
+             assert( out_control_word = (MDRout or F_ApB or MARin or Rd)) report  "TC:71 error  indirect indexed &count =01 is wrong";
+             wait for period;
+
+             count_SM <="10";
+             wait for period;
+             assert( out_control_word = (MDRout or MARin1 or Rd or F_HI)) report  "TC:72 error  indirect indexed &count =01 is wrong";
+             wait for period;
+
+             count_SM <="11";
+             wait for period;
+             assert( out_control_word = (MDRout or F_A or TMP2in)) report  "TC:73 error  indirect indexed &count =01 is wrong";
              wait for period;
 
 			-- Test Case 8 indir auto dec         
              --Ri <= "101";
-             --add_mode <= "111";
+             --add_mode <= "110";
              IR_data_out <= "1111110101000000";
+             count_SM <="00";
+             wait for period;
+             assert( out_control_word = (R5out or F_Am1 or MARin or Rd or R5in)) report  "TC:80 error dst, R5, indirect indexed &count =11 is wrong";
+             wait for period;
+
+             count_SM <="01";
+             wait for period;
+             assert( out_control_word = (MDRout or MARin1 or Rd or F_HI)) report  "TC:81 error dst, R5, indirect indexed &count =11 is wrong";
+             wait for period;
+
              count_SM <="10";
              wait for period;
-             assert( out_control_word = (MDRout or F_A or TMP2in)) report  "TC:8 error dst, R5, indirect indexed &count =11 is wrong";
+             assert( out_control_word = (MDRout or F_A or TMP2in)) report  "TC:82 error dst, R5, indirect indexed &count =11 is wrong";
              wait for period;
+
 
 			--for dst
 

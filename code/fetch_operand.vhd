@@ -90,7 +90,7 @@ architecture behavioral of fetch_operand is
                         control_word <= (Riout or MARin1 or RD or F_Ap1 or Riin);
                     elsif  fetch_cycle = "101" then 
                         control_word <= (MDRout or MARin1 or Rd or F_HI);
-                    elsif  fetch_cycle = "001" or fetch_cycle = "101" then 
+                    elsif  fetch_cycle = "001" or fetch_cycle = "110" then 
                         mem_out := true;        
                     end if;
 
