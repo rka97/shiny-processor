@@ -177,7 +177,7 @@ begin
                     if (count = "000") then
                         control_word <=  (JmpIROut or F_A or TMP2in);
                     elsif (count = "001") then
-                        control_word <=  (SPout or F_Am1 or TMP1in or SPin or MARin2);
+                        control_word <=  (SPout or F_Am1 or TMP1in or SPin or MARin);
                     elsif (count = "010") then
                         control_word <=  (PCout or F_Ap1 or MDRin or WT);
                     elsif (count = "011") then
@@ -187,7 +187,7 @@ begin
                 elsif (instruction_misc = "0011") then
                     if (misc_extra = '0') then -- RET
                         if (count = "000") then
-                            control_word <=  SPout or F_A or MARin2 or TMP1in or RD;
+                            control_word <=  SPout or F_A or MARin or TMP1in or RD;
                         elsif (count = "001") then
                             control_word <=  F_Ap1 or SPin;
                         elsif (count = "010") then
@@ -196,7 +196,7 @@ begin
                         end if;
                     elsif (misc_extra = '1') then -- HITR
                         if (count = "000" or count = "010") then
-                            control_word <=  SPout or F_Am1 or SPin or MARin2;
+                            control_word <=  SPout or F_Am1 or SPin or MARin;
                         elsif (count = "001") then
                             control_word <=  FLAGout or F_A or MDRin or WT;
                         elsif (count = "011") then
