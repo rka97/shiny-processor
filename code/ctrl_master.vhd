@@ -165,7 +165,70 @@ begin
                     mem_out := false;
             end if;    
         elsif current_state = "11" then -- Execution
+            if count = "000" then
+                counter_rst <= '0';
+            end if;
             -- Various Execution Phases
+            if instruction_category = two_op then
+            elsif instruction_category = one_op then
+            elsif instruction_category = branch then
+            elsif instruction_category = misc then
+                if (instruction_misc= "0100") then -- JMP
+                    if (count = "000") then
+                        control_word <=  (JmpIROut or F_A or TMP2in);
+                    elsif (count = "001") then
+                        control_word <=  (SPout or F_Am1 or TMP1in or SPin or MARin2);
+                    elsif (count = "010") then
+                        control_word <=  (PCout or F_Ap1 or MDRin or WT);
+                    elsif (count = "011") then
+                        control_word <=  (TMP2out or F_A or PCin);
+                        counter_rst <= '1';
+                    end if;
+                elsif (instruction_misc = "0011") then
+                    if (misc_extra = '0') then -- RET
+                        if (count = "000") then
+                            control_word <=  SPout or F_A or MARin2 or TMP1in or RD;
+                        elsif (count = "001") then
+                            control_word <=  F_Ap1 or SPin;
+                        elsif (count = "010") then
+                            control_word <=  MDRout or F_A or PCin;
+                            counter_rst <= '1';
+                        end if;
+                    elsif (misc_extra = '1') then -- HITR
+                        if (count = "000" or count = "010") then
+                            control_word <=  SPout or F_Am1 or SPin or MARin2;
+                        elsif (count = "001") then
+                            control_word <=  FLAGout or F_A or MDRin or WT;
+                        elsif (count = "011") then
+                            control_word <=  PCout or F_A or MDRin or WT;
+                        elsif (count = "100") then
+                            control_word <=  JmpIROut or F_A or PCin;
+                            counter_rst <= '1';
+                        end if;
+                    end if;
+                elsif (instruction_misc = "0010") then -- IRET
+                        if (count = "000" or count = "011") then
+                            control_word <=  SPout or MARin1 or RD or F_HI;
+                        elsif (count = "001" or count = "100") then
+                            control_word <=  SPout or F_Ap1 or SPin;
+                        elsif (count = "010") then
+                            control_word <=  MDRout or F_A or PCin;
+                        elsif (count = "101") then
+                            control_word <=  MDRout or F_A or FLAGin;
+                            counter_rst <= '1';
+                        end if;
+                elsif (instruction_misc = "0001") then -- HLT
+                    if (count = "000") then -- HLT
+                        control_word <=  HLT or F_HI;
+                        counter_rst <= '1';
+                    end if;
+                elsif (instruction_misc = "0000") then -- NoOp
+                    if (count = "000") then 
+                        control_word <=  NoOP or F_HI;
+                        counter_rst <= '1';
+                    end if;
+                end if;
+            end if;
         end if;
     end process;
     
