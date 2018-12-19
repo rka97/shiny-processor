@@ -93,12 +93,12 @@ begin
         if current_state = "00" then  -- Fetch Code Line
             if count = "000" then        -- PCout, F=A, MARin, TMP1in, Rd
                 counter_rst <= '0';
-                control_word <= PCout or F_A or MARin or TMP1in;
+                control_word <= PCout or MARin1 or F_Ap1 or PCin or RD;
                 next_state <= "00";
-            elsif count = "001" then     -- F=A+1, PCin, WMFC
+            elsif count = "010" then     -- F=A+1, PCin, WMFC
                 control_word <= TMP1out or F_Ap1 or PCin or RD;
                 next_state <= "00";
-            elsif count = "010" then     -- MDRout, F=A, IRin
+            elsif count = "001" then     -- MDRout, F=A, IRin
                 control_word <= MDRout or F_A or IRin;
                 -- Next State is Fetching if needed, otherwise execution right away!
                 next_state <= "11" when ((MDR_data(15 downto 14) = "00") or (MDR_data(15 downto 13) = "010")) else 
@@ -234,33 +234,36 @@ begin
                     next_state <= "00";
                 end if;
             elsif instruction_category = branch then
-                if (instruction_branch = "000") then
+                if (instruction_branch = "000") then --BR
                     valid_branch := '1';
-                elsif (instruction_branch = "001" and Zero = '1') then
+                elsif (instruction_branch = "001" and Zero = '1') then --BEQ
                     valid_branch := '1';
-                elsif (instruction_branch = "010" and Zero = '0') then
+                elsif (instruction_branch = "010" and Zero = '0') then --BNE
                     valid_branch := '1';
-                elsif (instruction_branch = "011" and Cout = '0') then
+                elsif (instruction_branch = "011" and Cout = '0') then --BLO
                     valid_branch := '1';
-                elsif (instruction_branch = "100" and (Cout = '0' or Zero = '1')) then
+                elsif (instruction_branch = "100" and (Cout = '0' or Zero = '1')) then --BLS
                     valid_branch := '1';
-                elsif (instruction_branch = "101" and Cout = '1') then
+                elsif (instruction_branch = "101" and Cout = '1') then --BHI
                     valid_branch := '1';
-                elsif (instruction_branch = "110" and (Cout = '1' or Zero = '1')) then
+                elsif (instruction_branch = "110" and (Cout = '1' or Zero = '1')) then --BHS
                     valid_branch := '1';
                 else
                     valid_branch := '0';
-                    control_word <= (others => '0');
+                    control_word <= F_Hi;
+                    next_state <= "00";
                     counter_rst <= '1';
                 end if;
 
                 if (valid_branch = '1') then
                     if (count = "000") then
                         control_word <= PCout or F_A or TMP1in;
+                        next_state <= current_state;
                     elsif (count = "001") then
                         control_word <= BrIRout or F_ApB or PCin;
                         valid_branch := '0';
                         counter_rst <= '1';
+                        next_state <= "00";
                     end if;
                 end if;
             elsif instruction_category = misc then
