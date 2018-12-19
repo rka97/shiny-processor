@@ -180,7 +180,7 @@ begin
                 end if;
             elsif instruction_category = branch then
             elsif instruction_category = misc then
-                if (instruction_misc= "0100") then -- JMP
+                if (instruction_misc= "0100") then -- JSR
                     if (count = "000") then
                         control_word <=  (JmpIROut or F_A or TMP2in);
                     elsif (count = "001") then
@@ -189,6 +189,7 @@ begin
                         control_word <=  (PCout or F_Ap1 or MDRin or WT);
                     elsif (count = "011") then
                         control_word <=  (TMP2out or F_A or PCin);
+                        next_state <= "00";
                         counter_rst <= '1';
                     end if;
                 elsif (instruction_misc = "0011") then
@@ -196,9 +197,10 @@ begin
                         if (count = "000") then
                             control_word <=  SPout or F_A or MARin or TMP1in or RD;
                         elsif (count = "001") then
-                            control_word <=  F_Ap1 or SPin;
+                            control_word <=  TMP1out or F_Ap1 or SPin;
                         elsif (count = "010") then
                             control_word <=  MDRout or F_A or PCin;
+                            next_state <= "00";
                             counter_rst <= '1';
                         end if;
                     elsif (misc_extra = '1') then -- HITR
@@ -209,7 +211,8 @@ begin
                         elsif (count = "011") then
                             control_word <=  PCout or F_A or MDRin or WT;
                         elsif (count = "100") then
-                            control_word <=  JmpIROut or F_A or PCin;
+                            control_word <=  HITROut or F_A or PCin;
+                            next_state <= "00";
                             counter_rst <= '1';
                         end if;
                     end if;
@@ -222,16 +225,19 @@ begin
                             control_word <=  MDRout or F_A or PCin;
                         elsif (count = "101") then
                             control_word <=  MDRout or F_A or FLAGin;
+                            next_state <= "00";
                             counter_rst <= '1';
                         end if;
                 elsif (instruction_misc = "0001") then -- HLT
                     if (count = "000") then -- HLT
-                        control_word <=  HLT or F_HI;
+                        control_word <=  PCout or F_Am1 or PCin;
+                        next_state <= "00";
                         counter_rst <= '1';
                     end if;
                 elsif (instruction_misc = "0000") then -- NoOp
                     if (count = "000") then 
                         control_word <=  NoOP or F_HI;
+                        next_state <= "00";
                         counter_rst <= '1';
                     end if;
                 end if;
