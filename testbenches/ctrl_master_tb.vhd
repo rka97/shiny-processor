@@ -96,23 +96,6 @@ begin
             IR_data => IR_data_out,
             control_word => control_word
         );
-    
-    branch_inst : entity processor.branch
-        generic map(
-            counter_bits => 2,
-            control_word_width => 32
-        )
-        port map(
-            clk => clk,
-            rst => branch_rst,
-            z => flags_data_current(1),
-            c => flags_data_current(0),
-            offset => IR_data_out(8 downto 0),
-            instruction => IR_data_out(11 downto 9),
-            counter_rst => branch_counter_rst,
-            control_word => branch_control_word,
-            inner_state => branch_state
-        );
 
     process (control_word, IR_data_out)
         begin

@@ -172,30 +172,31 @@ begin
             end if;
             -- Various Execution Phases
             if instruction_category = two_op then
+
             elsif instruction_category = one_op then
                 if (count = "000") then  
                     if instruction_one_op = "0000" then -- INC
                         control_word <= TMP1out or F_Ap1 or Dst_in;
                     elsif instruction_one_op = "0001" then -- DEC
-                        control_word <= TMP1out or F_Am1 or Dist_in;
+                        control_word <= TMP1out or F_Am1 or Dst_in;
                     elsif instruction_one_op = "0010" then -- CLR
-                        control_word <= TMP1out or F_Zero or Dist_in;
+                        control_word <= TMP1out or F_Zero or Dst_in;
                     elsif instruction_one_op = "0011" then -- INV
-                        control_word <= TMP1out or F_notA or Dist_in;
+                        control_word <= TMP1out or F_notA or Dst_in;
                     elsif instruction_one_op = "0100" then -- LSR
-                        control_word <= TMP1out or F_LSR or Dist_in;
+                        control_word <= TMP1out or F_LSR or Dst_in;
                     elsif instruction_one_op = "0101" then -- ROR
-                        control_word <= TMP1out or F_ROR or Dist_in;
+                        control_word <= TMP1out or F_ROR or Dst_in;
                     elsif instruction_one_op = "0110" then -- RRC
-                        control_word <= TMP1out or F_RRC or Dist_in;
+                        control_word <= TMP1out or F_RRC or Dst_in;
                     elsif instruction_one_op = "0111" then -- ASR
-                        control_word <= TMP1out or F_ASR or Dist_in;
+                        control_word <= TMP1out or F_ASR or Dst_in;
                     elsif instruction_one_op = "1000" then -- LSL
-                        control_word <= TMP1out or F_LSL or Dist_in;
+                        control_word <= TMP1out or F_LSL or Dst_in;
                     elsif instruction_one_op = "1001" then -- ROL
-                        control_word <= TMP1out or F_ROL or Dist_in;
+                        control_word <= TMP1out or F_ROL or Dst_in;
                     elsif instruction_one_op = "1010" then -- RLC
-                        control_word <= TMP1out or F_RLC or Dist_in;
+                        control_word <= TMP1out or F_RLC or Dst_in;
                     end if;
                     counter_rst <= '1';
                     next_state <= "00";
