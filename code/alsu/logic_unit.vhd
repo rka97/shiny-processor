@@ -15,6 +15,6 @@ architecture dataflow of logic_unit is
     begin
         F <= A and B when Sel = "00" else
             A or B when Sel = "01" else
-            A xor B when Sel = "10" else
+            A xnor B when Sel = "10" else
             not A;
 end dataflow;

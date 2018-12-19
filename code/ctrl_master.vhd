@@ -130,19 +130,22 @@ begin
                     mem_out := true;
                 end if;
             elsif sub_addr_mode ="01" then -- auto_increment
-                if  fetch_cycle = "000" or fetch_cycle = "100" then --if (add_mode(2)='0' and count(1 downto 0)="00") or (add_mode(2)='1' and count(1 downto 0)="00") then
+                if  fetch_cycle = "000" or fetch_cycle = "100" then
                     control_word <= (Riout or MARin1 or RD or F_Ap1 or Riin);
+                    next_state <= current_state;
                 elsif  fetch_cycle = "101" then 
-                    control_word <= (MDRout or MARin1 or Rd or F_HI);
+                    control_word <= (MDRout or F_A or MARin or Rd);
+                    next_state <= current_state;
                 elsif  fetch_cycle = "001" or fetch_cycle = "110" then 
                     mem_out := true;        
                 end if;
-            
             elsif sub_addr_mode = "10" then -- auto_decrement
                 if  fetch_cycle = "000" or fetch_cycle = "100" then 
                     control_word <= Riout or F_Am1 or MARin or Rd or Riin;
+                    next_state <= current_state;
                 elsif  fetch_cycle = "101" then 
                     control_word <= MDRout or MARin1 or Rd or F_HI;
+                    next_state <= current_state;
                 elsif  fetch_cycle = "001" or fetch_cycle = "110" then 
                     mem_out := true;       
                 end if;
@@ -150,10 +153,13 @@ begin
             elsif sub_addr_mode = "11" then -- indexed
                 if  fetch_cycle = "000" or fetch_cycle = "100" then 
                     control_word <= PCout or MARin1 or RD or F_Ap1 or PCin or TMP1in;
+                    next_state <= current_state;
                 elsif  fetch_cycle = "001" or fetch_cycle = "101" then 
                     control_word <= MDRout or F_ApB or MARin or Rd;
+                    next_state <= current_state;
                 elsif  fetch_cycle = "110" then 
                     control_word <= MDRout or MARin1 or Rd or F_HI;
+                    next_state <= current_state;
                 elsif  fetch_cycle = "010" or fetch_cycle = "111" then
                     mem_out := true;       
                 end if;
@@ -177,54 +183,52 @@ begin
             -- Various Execution Phases
             if instruction_category = two_op then
                 if (count = "000") then
-                    if instruction_two_op = "1111" then
-                        if (count = "000") then
-                            control_word <= TMP2out or F_A or Riin;
-                            counter_rst <= '1';
-                            next_state <= "00";
-                        end if;
-                    elsif (instruction_two_op = x"E") then
-                        control_word <= TMP2out or F_ApB or Dst_in;
-                    elsif (instruction_two_op = x"D") then
-                        control_word <= TMP2out or F_ApBp1 or Dst_in;
-                    elsif (instruction_two_op = x"C") then
-                        control_word <= TMP2out or F_AmB or Dst_in;
-                    elsif (instruction_two_op = x"B") then
-                        control_word <= TMP2out or F_AmBm1 or Dst_in;
-                    elsif (instruction_two_op = x"A") then
-                        control_word <= TMP2out or F_AandB or Dst_in;
-                    elsif (instruction_two_op = x"9") then
-                        control_word <= TMP2out or F_AorB or Dst_in;
-                    elsif (instruction_two_op = x"8") then
-                        control_word <= TMP2out or F_ApB or Dst_in;
-                    elsif (instruction_two_op = x"7") then
-                        control_word <= TMP2out or F_AmB;
+                    if instruction_two_op = "1111" then -- MOV
+                        control_word <= TMP2out or F_A or Riin or ForceFlag;
+                    elsif (instruction_two_op = x"E") then  -- ADD
+                        control_word <= TMP2out or F_ApB or Dst_in or ForceFlag;
+                    elsif (instruction_two_op = x"D") then -- ADC
+                        control_word <= TMP2out or F_ApB or Dst_in or ForceFlag;
+                    elsif (instruction_two_op = x"C") then -- SUB
+                        control_word <= TMP2out or F_AmB or Dst_in or ForceFlag;
+                    elsif (instruction_two_op = x"B") then -- SBC
+                        control_word <= TMP2out or F_AmBm1 or Dst_in or ForceFlag;
+                    elsif (instruction_two_op = x"A") then -- AND
+                        control_word <= TMP2out or F_AandB or Dst_in or ForceFlag;
+                    elsif (instruction_two_op = x"9") then -- OR
+                        control_word <= TMP2out or F_AorB or Dst_in or ForceFlag;
+                    elsif (instruction_two_op = x"8") then -- XNOR
+                        control_word <= TMP2out or F_ApB or Dst_in or ForceFlag;
+                    elsif (instruction_two_op = x"7") then -- Compare
+                        control_word <= TMP2out or F_AmB or ForceFlag;
                     end if;
+                    counter_rst <= '1';
+                    next_state <= "00";
                 end if;
             elsif instruction_category = one_op then
                 if (count = "000") then  
                     if instruction_one_op = "0000" then -- INC
-                        control_word <= TMP1out or F_Ap1 or Dst_in;
+                        control_word <= TMP1out or F_Ap1 or Dst_in or ForceFlag;
                     elsif instruction_one_op = "0001" then -- DEC
-                        control_word <= TMP1out or F_Am1 or Dst_in;
+                        control_word <= TMP1out or F_Am1 or Dst_in or ForceFlag;
                     elsif instruction_one_op = "0010" then -- CLR
-                        control_word <= TMP1out or F_Zero or Dst_in;
+                        control_word <= TMP1out or F_Zero or Dst_in or ForceFlag;
                     elsif instruction_one_op = "0011" then -- INV
-                        control_word <= TMP1out or F_notA or Dst_in;
+                        control_word <= TMP1out or F_notA or Dst_in or ForceFlag;
                     elsif instruction_one_op = "0100" then -- LSR
-                        control_word <= TMP1out or F_LSR or Dst_in;
+                        control_word <= TMP1out or F_LSR or Dst_in or ForceFlag;
                     elsif instruction_one_op = "0101" then -- ROR
-                        control_word <= TMP1out or F_ROR or Dst_in;
+                        control_word <= TMP1out or F_ROR or Dst_in or ForceFlag;
                     elsif instruction_one_op = "0110" then -- RRC
-                        control_word <= TMP1out or F_RRC or Dst_in;
+                        control_word <= TMP1out or F_RRC or Dst_in or ForceFlag;
                     elsif instruction_one_op = "0111" then -- ASR
-                        control_word <= TMP1out or F_ASR or Dst_in;
+                        control_word <= TMP1out or F_ASR or Dst_in or ForceFlag;
                     elsif instruction_one_op = "1000" then -- LSL
-                        control_word <= TMP1out or F_LSL or Dst_in;
+                        control_word <= TMP1out or F_LSL or Dst_in or ForceFlag;
                     elsif instruction_one_op = "1001" then -- ROL
-                        control_word <= TMP1out or F_ROL or Dst_in;
+                        control_word <= TMP1out or F_ROL or Dst_in or ForceFlag;
                     elsif instruction_one_op = "1010" then -- RLC
-                        control_word <= TMP1out or F_RLC or Dst_in;
+                        control_word <= TMP1out or F_RLC or Dst_in or ForceFlag;
                     end if;
                     counter_rst <= '1';
                     next_state <= "00";

@@ -9,7 +9,7 @@ entity cw_decoder is
         src_sel         : out std_logic_vector(13 downto 0);
         dst_sel         : out std_logic_vector(13 downto 0);
         alsu_sel        : out std_logic_vector(3 downto 0);
-        cin_force          : out std_logic;
+        cin_force       : out std_logic;
         br_offset_only  : out std_logic;
         mar_force_in    : out std_logic;
         mem_rd, mem_wr  : out std_logic;

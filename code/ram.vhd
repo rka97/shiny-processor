@@ -21,6 +21,7 @@ architecture mixed_ram of ram is
 		--R0=0,...,R5=5
 		0 => X"0000",
 		19 => X"0015",
+		24576 => X"0011",
 		others => X"0000"
     );
 	begin

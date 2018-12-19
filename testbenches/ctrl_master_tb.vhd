@@ -18,7 +18,10 @@ architecture behave of ctrl_master_tb is
     constant period : time := 1 ns;
 
 begin
-    c_in <= '1' when (cin_force = '1') else flags_data_current(0) when not (flags_data_current(0) = 'Z') else '0';
+    c_in <= '1' when (cin_force = '1') else 
+            flags_data_current(0) when 
+            ((IR_data_out(15 downto 12) = "1101" or IR_data_out(15 downto 12) = "1011" or (IR_data_out(15 downto 12) = "0110" and (IR_data_out(11 downto 8) = "0110" or IR_data_out(11 downto 8) = "1010"))) and not (flags_data_current(0) = 'Z'))
+            else '0';
     cw_decoder_inst : entity processor.cw_decoder
         port map (
             control_word => control_word,
