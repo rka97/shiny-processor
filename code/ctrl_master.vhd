@@ -6,7 +6,7 @@ use processor.p_constants.all;
 
 entity ctrl_master is 
     port (
-        clk	        : in std_logic;
+        clk, Zero, Cout	 : in std_logic;
         MDR_data    : in std_logic_vector(15 downto 0); -- Maybe there's a better way than this?
         IR_data		: in std_logic_vector(15 downto 0);
         control_word: out std_logic_vector(31 downto 0) 
@@ -79,7 +79,7 @@ begin
     variable mem_out		: boolean;
     variable Ri_out_preinc, Rp1	: std_logic_vector(3 downto 0);
     variable Dst_in         : std_logic_vector(31 downto 0);
-    variable valid_branch : std_logic := '0';
+    variable valid_branch   : std_logic := '0';
     
     begin
         fetch_cycle := addr_mode(2) & count(1 downto 0);
@@ -87,8 +87,9 @@ begin
         Ri_out_preinc := '0' & used_reg; -- 4-bt indicator of used registers
         Rp1 := std_logic_vector(to_unsigned(to_integer(unsigned( Ri_out_preinc )) + 1, 4));
         Riout := Rp1 & (27 downto 0 => '0'); -- source
-        Dst_in := Rp1 when addr_mode = "100" else (MDRin or WT); 
+        Dst_in := Riout when addr_mode = "100" else (MDRin or WT); 
         sub_addr_mode := addr_mode(1 downto 0); 
+        
         if current_state = "00" then  -- Fetch Code Line
             if count = "000" then        -- PCout, F=A, MARin, TMP1in, Rd
                 counter_rst <= '0';
@@ -205,21 +206,22 @@ begin
                 end if;
             elsif instruction_category = branch then
                 if (instruction_branch = "000") then
-                    valid_branch <= '1';
-                elsif (instruction_branch = "001" and z = '1') then
-                    valid_branch <= '1';
-                elsif (instruction_branch = "010" and z = '0') then
-                    valid_branch <= '1';
-                elsif (instruction_branch = "011" and c = '0') then
-                    valid_branch <= '1';
-                elsif (instruction_branch = "100" and (c = '0' or z = '1')) then
-                    valid_branch <= '1';
-                elsif (instruction_branch = "101" and c = '1') then
-                    valid_branch <= '1';
-                elsif (instruction_branch = "110" and (c = '1' or z = '1')) then
-                    valid_branch <= '1';
+                    valid_branch := '1';
+                elsif (instruction_branch = "001" and Zero = '1') then
+                    valid_branch := '1';
+                elsif (instruction_branch = "010" and Zero = '0') then
+                    valid_branch := '1';
+                elsif (instruction_branch = "011" and Cout = '0') then
+                    valid_branch := '1';
+                elsif (instruction_branch = "100" and (Cout = '0' or Zero = '1')) then
+                    valid_branch := '1';
+                elsif (instruction_branch = "101" and Cout = '1') then
+                    valid_branch := '1';
+                elsif (instruction_branch = "110" and (Cout = '1' or Zero = '1')) then
+                    valid_branch := '1';
                 else
-                    valid_branch <= '0';
+                    valid_branch := '0';
+                    control_word <= (others => '0');
                     counter_rst <= '1';
                 end if;
 
@@ -228,10 +230,8 @@ begin
                         control_word <= PCout or F_A or TMP1in;
                     elsif (count = "001") then
                         control_word <= BrIRout or F_ApB or PCin;
-                        valid_branch <= '0';
+                        valid_branch := '0';
                         counter_rst <= '1';
-                    else
-                        
                     end if;
                 end if;
             elsif instruction_category = misc then
