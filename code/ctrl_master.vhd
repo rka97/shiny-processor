@@ -79,6 +79,8 @@ begin
     variable mem_out		: boolean;
     variable Ri_out_preinc, Rp1	: std_logic_vector(3 downto 0);
     variable Dst_in         : std_logic_vector(31 downto 0);
+    variable valid_branch : std_logic := '0';
+    
     begin
         fetch_cycle := addr_mode(2) & count(1 downto 0);
         Riin := (31 downto 21 => '0') & used_reg_decoded & (12 downto 0 => '0'); -- destination
@@ -202,6 +204,36 @@ begin
                     next_state <= "00";
                 end if;
             elsif instruction_category = branch then
+                if (instruction_branch = "000") then
+                    valid_branch <= '1';
+                elsif (instruction_branch = "001" and z = '1') then
+                    valid_branch <= '1';
+                elsif (instruction_branch = "010" and z = '0') then
+                    valid_branch <= '1';
+                elsif (instruction_branch = "011" and c = '0') then
+                    valid_branch <= '1';
+                elsif (instruction_branch = "100" and (c = '0' or z = '1')) then
+                    valid_branch <= '1';
+                elsif (instruction_branch = "101" and c = '1') then
+                    valid_branch <= '1';
+                elsif (instruction_branch = "110" and (c = '1' or z = '1')) then
+                    valid_branch <= '1';
+                else
+                    valid_branch <= '0';
+                    counter_rst <= '1';
+                end if;
+
+                if (valid_branch = '1') then
+                    if (count = "000") then
+                        control_word <= PCout or F_A or TMP1in;
+                    elsif (count = "001") then
+                        control_word <= BrIRout or F_ApB or PCin;
+                        valid_branch <= '0';
+                        counter_rst <= '1';
+                    else
+                        
+                    end if;
+                end if;
             elsif instruction_category = misc then
                 if (instruction_misc= "0100") then -- JSR
                     if (count = "000") then
