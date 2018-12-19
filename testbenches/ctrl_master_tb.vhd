@@ -97,6 +97,7 @@ begin
             control_word => control_word
         );
     
+<<<<<<< HEAD
     branch_inst : entity processor.branch
         generic map(
             counter_bits => 2,
@@ -113,6 +114,13 @@ begin
             control_word => branch_control_word,
             inner_state => branch_state
         );
+=======
+    process (IR_data_out)
+        begin
+            data_1 <= (10 downto 0 => IR_data_out(10 downto 0), others => '0') when (control_word(7) = '1') else (others => 'Z');
+            data_1 <= (9 downto 1 => IR_data_out(8 downto 0), others => '0') when (control_word(31 downto 28) = "1111") else (others => 'Z');
+        end process;
+>>>>>>> 3c1a545153cbafcff5e562deda76d0e1d521a5de
 
     process is
         begin
@@ -123,12 +131,16 @@ begin
             wait for period;
             assert (control_word = (MDRout or F_A or IRin)) report "F&D: T2 is wrong!";
             wait for period;
+<<<<<<< HEAD
 
             wait for 2*period;
             assert control_word = x"82000000" report "wrong control word must be 16#82000000";
             wait for period;
             assert control_word = x"F0100200" report "wrong control word must be 16#F0100200";
 
+=======
+            assert (IR_data_out = X"6000") report "IR data is wrong!";
+>>>>>>> 3c1a545153cbafcff5e562deda76d0e1d521a5de
         end process;
 
     process is

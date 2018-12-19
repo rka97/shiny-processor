@@ -64,7 +64,7 @@ architecture structural of reg_file is
                 data_out_f => mar_data_out
             );
 
-        mdr_reg : entity processor.bi_reg
+        mdr_reg : entity processor.bi_reg_l
             generic map (N => N)
             port map (
                 clk => clk,
@@ -78,7 +78,7 @@ architecture structural of reg_file is
                 data_out_f => mdr_data_out
             );
         
-        flags_reg : entity processor.bi_reg
+        flags_reg : entity processor.bi_reg_l
         generic map (N => N)
         port map (
             clk => clk,
