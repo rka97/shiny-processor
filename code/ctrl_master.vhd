@@ -72,7 +72,7 @@ begin
         misc_jump_addr(10 downto 0) <= IR_data(10 downto 0);
     end process;
 
-    comb : process(count, current_state)
+    comb : process(count, current_state, used_reg, used_reg_decoded, addr_mode)
     variable fetch_cycle    : std_logic_vector(2 downto 0);
     variable Riin,Riout     : std_logic_vector(31 downto 0);
     variable sub_addr_mode  : std_logic_vector(1 downto 0);
@@ -87,7 +87,7 @@ begin
         Ri_out_preinc := '0' & used_reg; -- 4-bt indicator of used registers
         Rp1 := std_logic_vector(to_unsigned(to_integer(unsigned( Ri_out_preinc )) + 1, 4));
         Riout := Rp1 & (27 downto 0 => '0'); -- source
-        Dst_in := Riout when addr_mode = "100" else (MDRin or WT); 
+        Dst_in := Riin when addr_mode = "000" else (MDRin or WT); 
         sub_addr_mode := addr_mode(1 downto 0); 
         
         if current_state = "00" then  -- Fetch Code Line
@@ -124,7 +124,8 @@ begin
                     end if;
                     counter_rst <= '1';
                 elsif  fetch_cycle = "100" then --indirect register --if add_mode(2)='1' and count(1 downto 0)="00" then
-                    control_word <= (Riout or MARin1 or Rd or F_HI);
+                    control_word <= (Riout or F_A or MARin or Rd);
+                    next_state <= current_state;
                 elsif  fetch_cycle = "101" then --if add_mode(2)='1' and count(1 downto 0)="01" then
                     mem_out := true;
                 end if;
@@ -175,7 +176,13 @@ begin
             end if;
             -- Various Execution Phases
             if instruction_category = two_op then
-
+                if instruction_two_op = "1111" then
+                    if (count = "000") then
+                        control_word <= TMP2out or F_A or Riin;
+                        counter_rst <= '1';
+                        next_state <= "00";
+                    end if;
+                end if;
             elsif instruction_category = one_op then
                 if (count = "000") then  
                     if instruction_one_op = "0000" then -- INC
