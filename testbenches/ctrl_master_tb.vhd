@@ -15,6 +15,7 @@ architecture behave of ctrl_master_tb is
     signal clk, br_offset_only, mar_in1, mem_rd, mem_wr, halt, nop, cin_force, force_flag, src_en, dst_en, c_in : std_logic := 'Z';
     signal data_1, flags_data_current, flags_data_next : std_logic_vector(15 downto 0) := (others => '0');
     signal data_2, mar_data_out, mdr_data_in, mdr_data_out, tmp1_data_out, tmp2_data_out, IR_data_out  : std_logic_vector(15 downto 0) := (others => 'Z');
+    signal hardware_interrupt : std_logic := '0';
     constant period : time := 1 ns;
 
 begin
@@ -103,8 +104,9 @@ begin
         begin
             -- data_2 <= SPECIFIC-GREAT-ADDRESS when (control_word(1) = '1') else (others => 'Z');
             data_2 <= (9 downto 0 => IR_data_out(10 downto 1), others => '0') when (control_word(7) = '1') else 
-                        (8 downto 0 => IR_data_out(8 downto 0), others => '0') when (control_word(31 downto 28) = "1111") else
-                        (others => 'Z');
+                      (8 downto 0 => IR_data_out(8 downto 0), others => '0') when (control_word(31 downto 28) = "1111") else
+                      (11 downto 0 => x"7FE", others => '0') when (hardware_interrupt = '1') else -- make this go to a place which raises HITR
+                      (others => 'Z');
             --data_2 <= (9 downto 1 => IR_data_out(8 downto 0), others => '0') when (control_word(31 downto 28) = "1111") else (others => 'Z');
         end process;
 
@@ -116,6 +118,10 @@ begin
             assert (control_word = (TMP1out or F_Ap1 or PCin)) report "F&D: T1 is wrong!";
             wait for period;
             assert (control_word = (MDRout or F_A or IRin)) report "F&D: T2 is wrong!";
+            wait for period;
+            -- hardware_interrupt <= '1';
+            wait for period;
+            -- hardware_interrupt <= '0';
             wait for period;
         end process;
 
