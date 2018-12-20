@@ -6,9 +6,9 @@ use processor.p_constants.all;
 
 entity ctrl_master is 
     port (
-        clk, Zero, Cout	 : in std_logic;
+        clk, Zero, Cout, HW_ITR	 : in std_logic;
         MDR_data    : in std_logic_vector(15 downto 0); -- Maybe there's a better way than this?
-        IR_data		: in std_logic_vector(15 downto 0);
+        IR_data_in		: in std_logic_vector(15 downto 0);
         control_word: out std_logic_vector(31 downto 0) 
     );
 end ctrl_master;
@@ -31,6 +31,9 @@ architecture mixed of ctrl_master is
     signal instruction_misc   : std_logic_vector(3 downto 0) := (others => 'Z');
     signal misc_extra         : std_logic := 'Z';
     signal misc_jump_addr     : std_logic_vector(15 downto 0) := (others => '0');
+    signal load_HWITR : std_logic := 'Z';
+    signal new_HWITR, old_HWITR  : std_logic_vector(0 downto 0) := (others => '0');
+    signal IR_data            : std_logic_vector(15 downto 0) := (others => 'Z');
 begin
     counter_inst : entity processor.counter
         generic map (
@@ -43,9 +46,34 @@ begin
             count => count
         ); 
     
+        reg_inst : entity processor.reg
+            generic map ( N => 1 )
+            port map (
+                clk => clk,
+                enable => '1',
+                load => load_HWITR,
+                data_in => new_HWITR,
+                data_out => old_HWITR
+            );
     used_reg_decoder_inst : entity processor.decoder
                 generic map( Nsel =>3, Nout =>8 )
                 port map( enable => '1', A => used_reg, F => used_reg_decoded );
+
+    interrupt_decoded : process(HW_ITR)
+    begin
+        if rising_edge(HW_ITR) then
+            load_HWITR <= '1';
+            new_HWITR(0) <= '1';
+        else 
+            load_HWITR <= 'Z';
+            new_HWITR(0) <= 'Z';
+        end if;
+    end process;
+                
+    ir_choice : process(old_HWITR, IR_data_in, count, current_state)
+    begin
+        IR_data <= (15 downto 11 => "00111", others => '0') when (current_state = "100") else IR_data_in;
+    end process;
 
     comb_IR_decoder : process(IR_data, current_state)
     begin
@@ -59,8 +87,8 @@ begin
         -- src_reg <= IR_data(8 downto 6);
         -- dst_addr_mode <= IR_data(5 downto 3);
         -- dst_reg <= IR_data(2 downto 0);
-        addr_mode <= IR_data(11 downto 9) when current_state = "10" else IR_data(5 downto 3);
-        used_reg <=  IR_data(8 downto 6) when current_state = "10" else IR_data(2 downto 0);
+        addr_mode <= IR_data(11 downto 9) when current_state = "010" else IR_data(5 downto 3);
+        used_reg <=  IR_data(8 downto 6) when current_state = "010" else IR_data(2 downto 0);
         -- one-operand decoded instructions
         instruction_one_op <= IR_data(11 downto 8);
         -- branching decoded instructions
@@ -89,38 +117,39 @@ begin
         Riout := Rp1 & (27 downto 0 => '0'); -- source
         Dst_in := Riin when addr_mode = "000" else (MDRin or WT); 
         sub_addr_mode := addr_mode(1 downto 0); 
-        
-        if current_state = "00" then  -- Fetch Code Line
+        if current_state = "000" then  -- Fetch Code Line
+            load_HWITR <= 'Z';
+            new_HWITR(0) <= 'Z';
             if count = "000" then        -- PCout, F=A, MARin, TMP1in, Rd
                 counter_rst <= '0';
                 control_word <= PCout or MARin1 or F_Ap1 or PCin or RD;
-                next_state <= "00";
+                next_state <= "000";
             elsif count = "010" then     -- F=A+1, PCin, WMFC
                 control_word <= TMP1out or F_Ap1 or PCin or RD;
-                next_state <= "00";
+                next_state <= "000";
             elsif count = "001" then     -- MDRout, F=A, IRin
                 control_word <= MDRout or F_A or IRin;
                 -- Next State is Fetching if needed, otherwise execution right away!
-                next_state <= "11" when ((MDR_data(15 downto 14) = "00") or (MDR_data(15 downto 13) = "010")) else 
-                              "01" when (MDR_data(15 downto 12) = "0110") else
-                              "10";
+                next_state <= "011" when ((MDR_data(15 downto 14) = "00") or (MDR_data(15 downto 13) = "010")) else 
+                            "001" when (MDR_data(15 downto 12) = "0110") else
+                            "010";
                 counter_rst <= '1';
             else -- Error state: we should never be here!
-                next_state <= "00";
+                next_state <= "000";
                 counter_rst <= '1';
             end if;
-        elsif current_state = "01" or current_state = "10" then -- Fetch Op
+        elsif current_state = "001" or current_state = "010" then -- Fetch Op
             if count = "000" then
                 counter_rst <= '0';
             end if;
             if sub_addr_mode = "00" then  -- register
                 if  fetch_cycle= "000" then --direct --if add_mode(2)='0' and count(1 downto 0)="00" then
-                    if current_state="10" then--src
+                    if current_state = "010" then--src
                         control_word <=  (Riout or F_A or TMP2in);
-                        next_state <= "01"; --to fetch dst
-                    elsif current_state="01" then --dst
+                        next_state <= "001"; --to fetch dst
+                    elsif current_state = "001" then --dst
                         control_word <=  (Riout or F_A or TMP1in);
-                        next_state <= "11";
+                        next_state <= "011";
                     end if;
                     counter_rst <= '1';
                 elsif  fetch_cycle = "100" then --indirect register --if add_mode(2)='1' and count(1 downto 0)="00" then
@@ -166,17 +195,17 @@ begin
             end if;
             
             if (mem_out) then
-                 if current_state ="10" then--src
+                if current_state = "010" then--src
                         control_word <= MDRout or F_A or TMP2in;
-                        next_state <= "01";
+                        next_state <= "001";
                     else --dst
                         control_word <= MDRout or F_A or TMP1in;
-                        next_state <= "11";
+                        next_state <= "011";
                     end if;
                     counter_rst <= '1';
                     mem_out := false;
             end if;    
-        elsif current_state = "11" then -- Execution
+        elsif current_state = "011" then -- Execution
             if count = "000" then
                 counter_rst <= '0';
             end if;
@@ -203,7 +232,7 @@ begin
                         control_word <= TMP2out or F_AmB or ForceFlag;
                     end if;
                     counter_rst <= '1';
-                    next_state <= "00";
+                    next_state <= "000" when (old_HWITR(0) = '0') else "100";
                 end if;
             elsif instruction_category = one_op then
                 if (count = "000") then  
@@ -231,7 +260,7 @@ begin
                         control_word <= TMP1out or F_RLC or Dst_in or ForceFlag;
                     end if;
                     counter_rst <= '1';
-                    next_state <= "00";
+                    next_state <= "000" when (old_HWITR(0) = '0') else "100";
                 end if;
             elsif instruction_category = branch then
                 if (instruction_branch = "000") then --BR
@@ -251,7 +280,7 @@ begin
                 else
                     valid_branch := '0';
                     control_word <= F_Hi;
-                    next_state <= "00";
+                    next_state <= "000" when (old_HWITR(0) = '0') else "100";
                     counter_rst <= '1';
                 end if;
 
@@ -263,7 +292,7 @@ begin
                         control_word <= BrIRout or F_ApB or PCin;
                         valid_branch := '0';
                         counter_rst <= '1';
-                        next_state <= "00";
+                        next_state <= "000" when (old_HWITR(0) = '0') else "100";
                     end if;
                 end if;
             elsif instruction_category = misc then
@@ -276,7 +305,7 @@ begin
                         control_word <=  (PCout or F_Ap1 or MDRin or WT);
                     elsif (count = "011") then
                         control_word <=  (TMP2out or F_A or PCin);
-                        next_state <= "00";
+                        next_state <= "000" when (old_HWITR(0) = '0') else "100";
                         counter_rst <= '1';
                     end if;
                 elsif (instruction_misc = "0011") then
@@ -287,21 +316,10 @@ begin
                             control_word <=  TMP1out or F_Ap1 or SPin;
                         elsif (count = "010") then
                             control_word <=  MDRout or F_A or PCin;
-                            next_state <= "00";
+                            next_state <= "000" when (old_HWITR(0) = '0') else "100";
                             counter_rst <= '1';
                         end if;
                     elsif (misc_extra = '1') then -- HITR
-                        if (count = "000" or count = "010") then
-                            control_word <=  SPout or F_Am1 or SPin or MARin;
-                        elsif (count = "001") then
-                            control_word <=  FLAGout or F_A or MDRin or WT;
-                        elsif (count = "011") then
-                            control_word <=  PCout or F_A or MDRin or WT;
-                        elsif (count = "100") then
-                            control_word <=  HITROut or F_A or PCin;
-                            next_state <= "00";
-                            counter_rst <= '1';
-                        end if;
                     end if;
                 elsif (instruction_misc = "0010") then -- IRET
                         if (count = "000" or count = "011") then
@@ -312,22 +330,42 @@ begin
                             control_word <=  MDRout or F_A or PCin;
                         elsif (count = "101") then
                             control_word <=  MDRout or F_A or FLAGin;
-                            next_state <= "00";
+                            next_state <= "000";
                             counter_rst <= '1';
                         end if;
                 elsif (instruction_misc = "0001") then -- HLT
                     if (count = "000") then -- HLT
                         control_word <=  PCout or F_Am1 or PCin;
-                        next_state <= "00";
+                        next_state <= "000" when (old_HWITR(0) = '0') else "100";
                         counter_rst <= '1';
                     end if;
                 elsif (instruction_misc = "0000") then -- NoOp
                     if (count = "000") then 
                         control_word <=  NoOP or F_HI;
-                        next_state <= "00";
+                        next_state <= "000" when (old_HWITR(0) = '0') else "100";
                         counter_rst <= '1';
                     end if;
                 end if;
+            end if;
+        elsif current_state = "100" then
+            if count = "000" then
+                counter_rst <= '0';
+            end if;
+            if (count = "000" or count = "010") then
+                control_word <=  SPout or F_Am1 or SPin or MARin;
+                next_state <= current_state;
+            elsif (count = "001") then
+                control_word <=  FLAGout or F_A or MDRin or WT;
+                next_state <= current_state;
+            elsif (count = "011") then
+                control_word <=  PCout or F_A or MDRin or WT;
+                next_state <= current_state;
+            elsif (count = "100") then
+                control_word <=  HITROut or F_A or PCin;
+                next_state <= "000";
+                counter_rst <= '1';
+                load_HWITR <= '1';
+                new_HWITR(0) <= '0';
             end if;
         end if;
     end process;

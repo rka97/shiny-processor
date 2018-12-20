@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 package p_constants is
 
 constant N              : integer := 32;
-constant state_size     : integer := 2;
+constant state_size     : integer := 3;
 constant max_count_bits : integer := 3;
 
 constant NoSrc        : std_logic_vector(31 downto 0) := "0000" & (27 downto 0 => '0');

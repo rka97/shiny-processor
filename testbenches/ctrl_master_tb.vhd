@@ -96,7 +96,8 @@ begin
             MDR_data => mdr_data_out,
             Cout => flags_data_current(0),
             Zero => flags_data_current(1),
-            IR_data => IR_data_out,
+            HW_Itr => hardware_interrupt,
+            IR_data_in => IR_data_out,
             control_word => control_word
         );
 
@@ -104,8 +105,8 @@ begin
         begin
             -- data_2 <= SPECIFIC-GREAT-ADDRESS when (control_word(1) = '1') else (others => 'Z');
             data_2 <= (9 downto 0 => IR_data_out(10 downto 1), others => '0') when (control_word(7) = '1') else 
-                      (8 downto 0 => IR_data_out(8 downto 0), others => '0') when (control_word(31 downto 28) = "1111") else
-                      (11 downto 0 => x"7FE", others => '0') when (hardware_interrupt = '1') else -- make this go to a place which raises HITR
+                      (8 downto 0 => IR_data_out(8 downto 0), others => IR_data_out(8)) when (control_word(31 downto 28) = "1111") else
+                      (11 downto 0 => x"7FE", others => '0') when (control_word(1) = '1') else -- make this go to a place which raises HITR
                       (others => 'Z');
             --data_2 <= (9 downto 1 => IR_data_out(8 downto 0), others => '0') when (control_word(31 downto 28) = "1111") else (others => 'Z');
         end process;
@@ -120,9 +121,9 @@ begin
             assert (control_word = (MDRout or F_A or IRin)) report "F&D: T2 is wrong!";
             wait for period;
             -- hardware_interrupt <= '1';
-            wait for period;
+            -- wait for period;
             -- hardware_interrupt <= '0';
-            wait for period;
+            -- wait for period * 1000;
         end process;
 
     process is
