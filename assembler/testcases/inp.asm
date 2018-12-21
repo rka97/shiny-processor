@@ -1,0 +1,8 @@
+MOV #40, R6
+INC R1
+INC R2
+JSR func
+HLT
+func:
+ADD R2, R1
+RTS
