@@ -53,7 +53,7 @@ constant F_Am1        : std_logic_vector(31 downto 0) :=  (31 downto 13 => '0') 
 constant F_Ap1        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00001" & (7 downto 0 => '0');
 constant F_ApBp1      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00011" & (7 downto 0 => '0');
 constant F_AmB        : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00101" & (7 downto 0 => '0');
-constant F_Zero       : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00110" & (7 downto 0 => '0');
+constant F_Zero       : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "00111" & (7 downto 0 => '0');
 
 constant F_AandB      : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0100" & (8 downto 0 => '0');
 constant F_AorB       : std_logic_vector(31 downto 0) := (31 downto 13 => '0') & "0101" & (8 downto 0 => '0');

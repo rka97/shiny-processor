@@ -4,11 +4,11 @@ library processor;
 use processor.p_constants.all;
 
 -- Connects the RAM, Register File, ALSU together. Decodes control signals given by user input.
--- Assume that B of ALU is TMP1
-entity ctrl_master_tb is
-end ctrl_master_tb;
+-- Hear of the processor.
+entity processor_tb is
+end processor_tb;
 
-architecture behave of ctrl_master_tb is
+architecture behave of processor_tb is
     signal control_word : std_logic_vector(31 downto 0) := (others => 'Z');
     signal src_sel, dst_sel : std_logic_vector(13 downto 0) := (others => 'Z');
     signal alsu_sel : std_logic_vector(3 downto 0) := (others => 'Z');
@@ -19,6 +19,8 @@ architecture behave of ctrl_master_tb is
     constant period : time := 1 ns;
 
 begin
+    -- Sets the input Carry (to the ALU) to be given by the Flags register when ADC/SBC instructions are supplied, else
+    -- sets the input carry from the appropriate controlw ord.
     c_in <= '1' when (cin_force = '1') else 
             flags_data_current(0) when 
             ((IR_data_out(15 downto 12) = "1101" or IR_data_out(15 downto 12) = "1011" or (IR_data_out(15 downto 12) = "0110" and (IR_data_out(11 downto 8) = "0110" or IR_data_out(11 downto 8) = "1010"))) and not (flags_data_current(0) = 'Z'))
@@ -103,27 +105,20 @@ begin
 
     process (control_word, IR_data_out)
         begin
-            -- data_2 <= SPECIFIC-GREAT-ADDRESS when (control_word(1) = '1') else (others => 'Z');
-            data_2 <= (9 downto 0 => IR_data_out(10 downto 1), others => '0') when (control_word(7) = '1') else 
+            -- This sets the data line with the appropriate bits out of the Instruction Register when the Branch/Jmp bits are set in the control word.
+            data_2 <= (10 downto 0 => IR_data_out(10 downto 0), others => '0') when (control_word(7) = '1') else 
                       (8 downto 0 => IR_data_out(8 downto 0), others => IR_data_out(8)) when (control_word(31 downto 28) = "1111") else
                       (11 downto 0 => x"7FE", others => '0') when (control_word(1) = '1') else -- make this go to a place which raises HITR
                       (others => 'Z');
-            --data_2 <= (9 downto 1 => IR_data_out(8 downto 0), others => '0') when (control_word(31 downto 28) = "1111") else (others => 'Z');
         end process;
 
     process is
         begin
             wait for period;
-            assert (control_word = (PCout or F_A or MARin or TMP1in or RD)) report "F&D: T0 is wrong!";
+            hardware_interrupt <= '1'; -- Tests the hardware interrupt.
             wait for period;
-            assert (control_word = (TMP1out or F_Ap1 or PCin)) report "F&D: T1 is wrong!";
-            wait for period;
-            assert (control_word = (MDRout or F_A or IRin)) report "F&D: T2 is wrong!";
-            wait for period;
-            -- hardware_interrupt <= '1';
-            -- wait for period;
-            -- hardware_interrupt <= '0';
-            -- wait for period * 1000;
+            hardware_interrupt <= '0';
+            wait for period * 1000;
         end process;
 
     process is

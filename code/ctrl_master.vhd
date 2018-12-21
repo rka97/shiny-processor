@@ -213,7 +213,7 @@ begin
             if instruction_category = two_op then
                 if (count = "000") then
                     if instruction_two_op = "1111" then -- MOV
-                        control_word <= TMP2out or F_A or Riin or ForceFlag;
+                        control_word <= TMP2out or F_A or Dst_in or ForceFlag;
                     elsif (instruction_two_op = x"E") then  -- ADD
                         control_word <= TMP2out or F_ApB or Dst_in or ForceFlag;
                     elsif (instruction_two_op = x"D") then -- ADC
